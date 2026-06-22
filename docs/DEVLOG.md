@@ -138,3 +138,4 @@
 - Added `docs/reference/api.md`, `docs/how-to/html-ppt.md`, and `docs/how-to/docs-site.md`.
 - Switched font imports to subsetted `latin-*` CSS files and added `check:font-imports`.
 - Added `check:palettes` to keep all ten palettes aligned with the manifest and variable contract.
+- Added `docs/reference/palette-quality.md` to record the role and checked status of every palette.

@@ -102,6 +102,7 @@ console.log(palettes);
 ```
 
 API docs live in `docs/reference/api.md`.
+The palette quality matrix lives in `docs/reference/palette-quality.md`.
 
 ### Local Docs Site
 

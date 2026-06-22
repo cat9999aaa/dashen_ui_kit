@@ -102,6 +102,7 @@ console.log(palettes);
 ```
 
 API 文档见 `docs/reference/api.md`。
+配色质量矩阵见 `docs/reference/palette-quality.md`。
 
 ### 本地文档站
 

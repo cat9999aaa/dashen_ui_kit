@@ -39,6 +39,7 @@ Default local URL: `http://127.0.0.1:5173/`
 - Project rules: `docs/PROJECT_RULES.md`
 - Architecture notes: `docs/explanation/architecture.md`
 - Module reference: `docs/reference/modules.md`
+- Palette quality matrix: `docs/reference/palette-quality.md`
 
 ## Changelog
 

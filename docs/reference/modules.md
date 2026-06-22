@@ -79,6 +79,8 @@ Palette files define:
 
 Do not put component selectors in palette files.
 
+Palette quality review lives in `docs/reference/palette-quality.md`.
+
 ## Package Surface
 
 - Main typed export: `dashen-ui-kit`.
