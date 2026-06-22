@@ -10,7 +10,7 @@ Use these layers when applying the kit to a project:
 - `components` for interface controls.
 - `motion` for animations.
 - `print` for PDF and paged media.
-- `references/ppt-workflow.md` for EXOFRAME-themed PowerPoint decks.
+- `references/ppt-workflow.md` for EXOFRAME-themed HTML decks.
 
 For quick adoption, copy the minimal required layers first:
 
@@ -23,4 +23,4 @@ For quick adoption, copy the minimal required layers first:
 
 Palette files should expose `--palette-*` variables only. Components should never depend on a concrete palette name such as `amethyst` or `azure`.
 
-When adapting the system to decks, use the same active palette and typography roles, but build the final `.pptx` through the Presentations skill and `@oai/artifact-tool`.
+When adapting the system to decks, use the same active palette and typography roles, but build browser-native HTML decks. Do not create `.pptx` unless the user explicitly changes the project direction.

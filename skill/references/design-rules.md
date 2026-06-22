@@ -8,7 +8,7 @@
 - Never add component selectors to palette files.
 - Use semantic variables in components and elements instead of hard-coded palette colors.
 - Treat article and print output as first-class surfaces.
-- Treat PowerPoint/deck output as a first-class surface when requested.
+- Treat HTML deck output as a first-class surface when requested.
 - Respect reduced motion.
 - Prefer token-driven styling over hard-coded component colors.
 - Keep ASCII blocks equal-width, monospace, and free of trailing whitespace.

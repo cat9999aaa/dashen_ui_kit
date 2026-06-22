@@ -5,9 +5,11 @@ import { initCodeCopy } from "./lib/copy-code";
 import { initMotion } from "./lib/motion";
 import { renderPaletteGallery } from "./lib/palette-gallery";
 import { initPrintAction } from "./lib/print";
+import { initShowcaseApp } from "./lib/showcase";
 import { initTerminal } from "./lib/terminal";
 import { initThemeToggle } from "./lib/theme";
 
+initShowcaseApp();
 renderPaletteGallery();
 highlightCode();
 initComponentDemos();

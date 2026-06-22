@@ -124,7 +124,7 @@
   - expanded trigger description for front-end showcase and deck work;
   - added PPT/deck output as a first-class surface;
   - added `skill/references/ppt-workflow.md`;
-  - documented that actual `.pptx` creation should use the Presentations skill and `@oai/artifact-tool`, not `python-pptx`.
+  - documented that EXOFRAME presentation output is browser-native HTML, not `.pptx`.
 
 ## v0.2 Full-Form Push
 

@@ -8,13 +8,19 @@
 
 EXOFRAME is an original visual language. It does not use third-party franchise names, logos, character references, copied interface graphics, or copied assets.
 
+## About
+
+`dashen_ui_kit` is built by **王大神 · dashen**, the self-described strict father of AI: legislator, architect, Stanley Team co-founder, and technical lead. The project is not a throwaway demo. It is a reusable UI shell for GitHub demos, Codex skills, HTML decks, theme systems, and local-first product surfaces.
+
+Dashen's background spans reverse engineering, vulnerability research, 2000+ PBN nodes, the TradeV7 quant system, Hermes Agent, OpenTSC, and the x-plan AI content factory. The operating principle behind this kit is the same one behind his TSC thinking: technology can be copied, relationships and rules cannot.
+
 ## Principles
 
 - No CDN runtime assets. Fonts, Prism, GSAP, and runtime code are local dependencies.
 - Base components and palettes stay separate. Components consume semantic variables such as `--color-*`, `--code-*`, and `--syntax-*`.
 - Each palette lives in its own file under `src/styles/tokens/palettes/`.
 - Adding a palette should not require component edits.
-- Prose, print/PDF, and PowerPoint output are first-class surfaces.
+- Prose, print/PDF, and HTML presentation output are first-class surfaces.
 - `skill/` is a small draft for future Codex skill packaging.
 - ASCII wordmarks, diagrams, and terminal art must be equal-width and automatically checked.
 

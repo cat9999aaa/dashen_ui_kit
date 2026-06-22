@@ -6,6 +6,12 @@ Reusable local-only EXOFRAME UI kit for cool terminal/CRT/ASCII screens, prose, 
 
 ![EXOFRAME showcase](docs/assets/showcase-amethyst.png)
 
+## About
+
+`dashen_ui_kit` is built by **王大神 · dashen**, the self-described strict father of AI: legislator, architect, Stanley Team co-founder, and technical lead. The project is not a throwaway demo. It is a reusable UI shell for GitHub demos, Codex skills, HTML decks, theme systems, and local-first product surfaces.
+
+Dashen's background spans reverse engineering, vulnerability research, 2000+ PBN nodes, the TradeV7 quant system, Hermes Agent, OpenTSC, and the x-plan AI content factory. The operating principle behind this kit is the same one behind his TSC thinking: technology can be copied, relationships and rules cannot.
+
 ## Languages
 
 - [简体中文](README.zh-CN.md)
@@ -31,7 +37,7 @@ Default local URL: `http://127.0.0.1:5173/`
 - HTML PPT deck at `docs/deck/exoframe-html-ppt.html`.
 - Independent palette system with 10 palettes.
 - Terminal, CRT, ASCII, article, code, component, motion, print, and PDF-oriented layers.
-- Future Codex skill draft in `skill/`, including an EXOFRAME PowerPoint workflow reference.
+- Future Codex skill draft in `skill/`, including an EXOFRAME HTML presentation workflow reference.
 - Installable `$exoframe-ui` skill metadata and local install script.
 - Validation scripts for TypeScript, local assets, ASCII alignment, and production build.
 - Typed package exports through `src/index.ts`.

@@ -8,6 +8,12 @@
 
 EXOFRAME 是原创视觉语言，不使用第三方影视、游戏、组织、角色、标志或复制界面资产。
 
+## About / 王大神
+
+`dashen_ui_kit` 由 **王大神 · dashen** 构建：AI 最严厉的父亲，立法者 / 构架师，Stanley Team 联合创始人兼技术负责人。这个项目不是一次性演示页，而是一个可以用于 GitHub 展示、Codex skill、HTML PPT、主题系统和本地化产品界面的 UI 外壳。
+
+他的履历横跨逆向工程、漏洞研究、2000+ PBN 节点、TradeV7 量化系统、Hermes Agent、OpenTSC 和 x-plan AI 内容工厂。这个组件库背后的原则和 TSC 一样：技术会被复制，关系和规则不会。
+
 ## 核心原则
 
 - 不使用 CDN。字体、Prism、GSAP 和运行时代码都走本地依赖。
