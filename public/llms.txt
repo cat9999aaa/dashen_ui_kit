@@ -1,0 +1,27 @@
+# dashen_ui_kit
+
+A local-only EXOFRAME UI kit for terminal, CRT, ASCII, palette modules, component docs, HTML PPT decks, and Codex skills.
+
+## Primary URLs
+
+- Showcase: https://cat9999aaa.github.io/dashen_ui_kit/
+- English showcase: https://cat9999aaa.github.io/dashen_ui_kit/en.html
+- Component docs: https://cat9999aaa.github.io/dashen_ui_kit/docs/site/
+- English component docs: https://cat9999aaa.github.io/dashen_ui_kit/docs/site/en.html
+- HTML PPT example: https://cat9999aaa.github.io/dashen_ui_kit/docs/deck/exoframe-html-ppt.html
+- English HTML PPT example: https://cat9999aaa.github.io/dashen_ui_kit/docs/deck/exoframe-html-ppt.en.html
+
+## What This Project Is
+
+- Local-only front-end UI kit.
+- Original EXOFRAME visual language.
+- Terminal, CRT, ASCII, prose, code, motion, print, and HTML deck surfaces.
+- Independent palette modules and typed package exports.
+- Installable Codex skill at `skill/`.
+
+## Use Cases
+
+- Build a retro-futurist local UI.
+- Reuse palette-driven components.
+- Create browser-native HTML PPT decks instead of .pptx files.
+- Install `$exoframe-ui` as a local Codex skill.

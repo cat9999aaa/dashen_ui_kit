@@ -1,0 +1,54 @@
+# dashen_ui_kit
+
+A local-only EXOFRAME UI kit for terminal, CRT, ASCII, palette modules, component docs, HTML PPT decks, and Codex skills.
+
+## Primary URLs
+
+- Showcase: https://cat9999aaa.github.io/dashen_ui_kit/
+- English showcase: https://cat9999aaa.github.io/dashen_ui_kit/en.html
+- Component docs: https://cat9999aaa.github.io/dashen_ui_kit/docs/site/
+- English component docs: https://cat9999aaa.github.io/dashen_ui_kit/docs/site/en.html
+- HTML PPT example: https://cat9999aaa.github.io/dashen_ui_kit/docs/deck/exoframe-html-ppt.html
+- English HTML PPT example: https://cat9999aaa.github.io/dashen_ui_kit/docs/deck/exoframe-html-ppt.en.html
+
+## What This Project Is
+
+- Local-only front-end UI kit.
+- Original EXOFRAME visual language.
+- Terminal, CRT, ASCII, prose, code, motion, print, and HTML deck surfaces.
+- Independent palette modules and typed package exports.
+- Installable Codex skill at `skill/`.
+
+## Use Cases
+
+- Build a retro-futurist local UI.
+- Reuse palette-driven components.
+- Create browser-native HTML PPT decks instead of .pptx files.
+- Install `$exoframe-ui` as a local Codex skill.
+
+## Package
+
+- Name: dashen-ui-kit
+- Version: 0.2.0
+- CSS export: dashen-ui-kit/styles.css
+- TypeScript entry: src/index.ts
+
+## Important Local Files
+
+- README.zh-CN.md: Chinese guide.
+- README.en.md: English guide.
+- en.html: English showcase page.
+- docs/site/en.html: English component docs page.
+- docs/deck/exoframe-html-ppt.en.html: English HTML PPT page.
+- docs/reference/api.md: package API.
+- docs/reference/palette-quality.md: palette matrix.
+- docs/how-to/html-ppt.md: HTML deck usage.
+- skill/SKILL.md: Codex skill entry.
+- skill/references/ppt-workflow.md: HTML PPT workflow for the skill.
+
+## Constraints
+
+- No CDN runtime assets.
+- No copied franchise IP.
+- HTML PPT output only; do not create .pptx unless the user explicitly changes the project direction.
+- ASCII blocks must remain equal width.

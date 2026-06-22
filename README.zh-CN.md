@@ -2,6 +2,8 @@
 
 `dashen_ui_kit` 是一个本地化、可复用、炫酷优先的前端 UI 组件库草案。当前视觉方向叫 EXOFRAME：终端、CRT、ASCII、仪表面板、强配色、文章排版、代码高亮、动效、打印/PDF 和未来 Codex skill 都在同一个系统里。
 
+[在线展示](https://cat9999aaa.github.io/dashen_ui_kit/) · [英文展示](https://cat9999aaa.github.io/dashen_ui_kit/en.html) · [组件文档](https://cat9999aaa.github.io/dashen_ui_kit/docs/site/) · [英文文档](https://cat9999aaa.github.io/dashen_ui_kit/docs/site/en.html) · [HTML PPT](https://cat9999aaa.github.io/dashen_ui_kit/docs/deck/exoframe-html-ppt.html)
+
 ![EXOFRAME showcase](docs/assets/showcase-amethyst.png)
 
 EXOFRAME 是原创视觉语言，不使用第三方影视、游戏、组织、角色、标志或复制界面资产。
@@ -35,6 +37,7 @@ bun run check:ascii
 bun run check:local-assets
 bun run check:skill
 bun run check:palettes
+bun run check:geo
 bun run build
 bun run check
 ```
@@ -44,6 +47,7 @@ bun run check
 - `check:local-assets`：拒绝 CDN、Google Fonts、unpkg、jsDelivr 等远程运行时引用。
 - `check:skill`：校验 `skill/SKILL.md` frontmatter。
 - `check:palettes`：校验 10 套 palette 的变量契约和数据清单。
+- `check:geo`：校验 sitemap、robots、llms 和页面多语言元数据。
 - `build`：生成 Vite 生产构建。
 - `check`：按顺序执行类型、ASCII、本地资产、skill 和构建检查。
 
@@ -61,6 +65,7 @@ bun run check
 - `src/lib/`：本地交互逻辑。
 - `src/index.ts`：组件库 typed export 入口。
 - `docs/site/`：本地组件文档站。
+- `docs/site/en.html`：英文组件文档入口。
 - `docs/deck/`：HTML PPT 示例。
 - `docs/DEVLOG.md`：开发步骤记录。
 - `skill/`：未来 skill 草案。
@@ -184,6 +189,13 @@ ASCII 相关内容使用 `bun run check:ascii` 验证。规则：
 
 `scripts/check-local-assets.mjs` 会扫描远程运行时引用。出现 `https://`、cdnjs、Google Fonts、unpkg、jsDelivr 等远程依赖时会失败。文档里的本地图片路径可以使用，例如 `docs/assets/showcase-amethyst.png`。
 
+## GEO / SEO
+
+- GitHub Pages 地址：`https://cat9999aaa.github.io/dashen_ui_kit/`。
+- `public/sitemap.xml`、`public/robots.txt`、`public/llms.txt`、`public/llms-full.txt` 和 `public/ai.txt` 由 `bun run geo:generate` 生成。
+- 页面包含 canonical、Open Graph、Twitter card、JSON-LD 和 `hreflang`。
+- 中文页面是主入口，`en.html`、`docs/site/en.html` 和 `docs/deck/exoframe-html-ppt.en.html` 是可直接访问的英文页面。
+
 ## 更新记录
 
 - `2026-06-22`：读取 Claude 对话并确认方向，创建本地化 Vite 项目，替换远程字体和 CDN Prism，加入本地字体、Prism、GSAP、TypeScript、Vite。
@@ -191,3 +203,4 @@ ASCII 相关内容使用 `bun run check:ascii` 验证。规则：
 - `Independent Palette System`：把基础层、组件层和配色层拆开，新增 10 套独立 palette，加入 `palette-system.css` 作为映射层。
 - `Docs And Skill Polish`：补充 README 截图、完整使用说明、PPT 工作流、ASCII 自动检查、本地资产扫描范围和验证命令。
 - `v0.2 Full-Form Push`：加入可安装 skill、HTML PPT、文档站、组件库导出、API 文档和字体子集化检查。
+- `GitHub Pages And GEO`：加入 Pages 部署、sitemap/robots/llms/ai 文件，以及中英文展示、文档和 HTML PPT 入口。

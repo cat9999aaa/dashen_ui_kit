@@ -2,6 +2,8 @@
 
 `dashen_ui_kit` is a local-only, reusable, visually intense front-end UI kit draft. The current direction is EXOFRAME: terminal, CRT, ASCII, instrument panels, bold palettes, prose formatting, code highlighting, motion, print/PDF output, and future Codex skill reuse in one system.
 
+[Live Demo](https://cat9999aaa.github.io/dashen_ui_kit/) · [English Demo](https://cat9999aaa.github.io/dashen_ui_kit/en.html) · [Docs](https://cat9999aaa.github.io/dashen_ui_kit/docs/site/) · [English Docs](https://cat9999aaa.github.io/dashen_ui_kit/docs/site/en.html) · [HTML PPT](https://cat9999aaa.github.io/dashen_ui_kit/docs/deck/exoframe-html-ppt.html)
+
 ![EXOFRAME showcase](docs/assets/showcase-amethyst.png)
 
 EXOFRAME is an original visual language. It does not use third-party franchise names, logos, character references, copied interface graphics, or copied assets.
@@ -35,6 +37,7 @@ bun run check:ascii
 bun run check:local-assets
 bun run check:skill
 bun run check:palettes
+bun run check:geo
 bun run build
 bun run check
 ```
@@ -44,6 +47,7 @@ bun run check
 - `check:local-assets`: rejects CDN, Google Fonts, unpkg, jsDelivr, and similar remote runtime references.
 - `check:skill`: validates `skill/SKILL.md` frontmatter.
 - `check:palettes`: validates palette variables and manifest entries.
+- `check:geo`: validates sitemap, robots, llms files, and multilingual metadata.
 - `build`: production Vite build.
 - `check`: full validation chain.
 
@@ -61,6 +65,7 @@ bun run check
 - `src/lib/`: local runtime behavior.
 - `src/index.ts`: typed package export.
 - `docs/site/`: local component docs site.
+- `docs/site/en.html`: English component docs entry.
 - `docs/deck/`: HTML PPT example.
 - `docs/DEVLOG.md`: development log.
 - `skill/`: future skill draft.
@@ -184,6 +189,13 @@ Run `bun run check:ascii` after editing ASCII content. It validates:
 
 `scripts/check-local-assets.mjs` scans for remote runtime references. `https://`, cdnjs, Google Fonts, unpkg, jsDelivr, and similar remote runtime dependencies fail the check. Local documentation images such as `docs/assets/showcase-amethyst.png` are allowed.
 
+## GEO / SEO
+
+- GitHub Pages URL: `https://cat9999aaa.github.io/dashen_ui_kit/`.
+- `public/sitemap.xml`, `public/robots.txt`, `public/llms.txt`, `public/llms-full.txt`, and `public/ai.txt` are generated with `bun run geo:generate`.
+- Pages include canonical links, Open Graph, Twitter cards, JSON-LD, and `hreflang`.
+- The Chinese page is the primary entry; `en.html`, `docs/site/en.html`, and `docs/deck/exoframe-html-ppt.en.html` are directly accessible English pages.
+
 ## Changelog
 
 - `2026-06-22`: Read the Claude conversation, confirmed the direction, created the local Vite project, and replaced remote fonts/CDN Prism with local dependencies.
@@ -191,3 +203,4 @@ Run `bun run check:ascii` after editing ASCII content. It validates:
 - `Independent Palette System`: Split base/components from 10 independent palette modules and added `palette-system.css` as the mapping layer.
 - `Docs And Skill Polish`: Added README screenshot, full usage notes, PPT workflow, ASCII validation, broader local asset scanning, and the full validation command chain.
 - `v0.2 Full-Form Push`: Adds installable skill metadata, HTML PPT, docs site, package exports, API docs, and font subset checks.
+- `GitHub Pages And GEO`: Adds Pages deployment, sitemap/robots/llms/ai files, and zh/en showcase, docs, and HTML PPT entry points.

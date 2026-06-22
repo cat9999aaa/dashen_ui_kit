@@ -139,3 +139,20 @@
 - Switched font imports to subsetted `latin-*` CSS files and added `check:font-imports`.
 - Added `check:palettes` to keep all ten palettes aligned with the manifest and variable contract.
 - Added `docs/reference/palette-quality.md` to record the role and checked status of every palette.
+
+## GitHub Pages And GEO
+
+- Added GitHub Pages deployment workflow for `main`.
+- Added GitHub Pages base path handling with `GITHUB_PAGES=true`.
+- Added generated GEO files:
+  - `robots.txt`;
+  - `sitemap.xml`;
+  - `llms.txt`;
+  - `llms-full.txt`;
+  - `ai.txt`.
+- Added multilingual metadata, canonical links, Open Graph, Twitter cards, `hreflang`, and JSON-LD to the showcase, docs site, and HTML PPT.
+- Added direct English HTML entry points for showcase, docs, and HTML PPT:
+  - `en.html`;
+  - `docs/site/en.html`;
+  - `docs/deck/exoframe-html-ppt.en.html`.
+- Added `check:geo` to validate generated GEO files and page metadata.

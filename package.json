@@ -40,7 +40,9 @@
     "skill:install": "node scripts/install-skill.mjs",
     "check:font-imports": "node scripts/check-font-imports.mjs",
     "check:palettes": "node scripts/check-palettes.mjs",
-    "check": "bun run check:types && bun run check:ascii && bun run check:local-assets && bun run check:skill && bun run check:font-imports && bun run check:palettes && bun run build"
+    "geo:generate": "node scripts/generate-geo.mjs",
+    "check:geo": "node scripts/check-geo.mjs",
+    "check": "bun run geo:generate && bun run check:types && bun run check:ascii && bun run check:local-assets && bun run check:skill && bun run check:font-imports && bun run check:palettes && bun run check:geo && bun run build"
   },
   "dependencies": {
     "@fontsource/inter": "5.2.8",
