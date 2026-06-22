@@ -1,6 +1,8 @@
 # dashen_ui_kit
 
-Reusable local-only UI, prose, motion, palette, and print system.
+Reusable local-only EXOFRAME UI kit for cool terminal/CRT/ASCII screens, prose, motion, palette modules, print/PDF output, and future Codex skill reuse.
+
+![EXOFRAME showcase](docs/assets/showcase-amethyst.png)
 
 ## Languages
 
@@ -15,5 +17,28 @@ bun run dev
 bun run check
 ```
 
-Repository: `dashen_ui_kit`
-Package name: `dashen-ui-kit`
+Default local URL: `http://127.0.0.1:5173/`
+
+## What Is Included
+
+- Local Vite front-end showcase with no CDN runtime assets.
+- Independent palette system with 10 palettes.
+- Terminal, CRT, ASCII, article, code, component, motion, print, and PDF-oriented layers.
+- Future Codex skill draft in `skill/`, including an EXOFRAME PowerPoint workflow reference.
+- Validation scripts for TypeScript, local assets, ASCII alignment, and production build.
+
+## Documentation
+
+- Chinese full guide: `README.zh-CN.md`
+- English full guide: `README.en.md`
+- Development log: `docs/DEVLOG.md`
+- Project rules: `docs/PROJECT_RULES.md`
+- Architecture notes: `docs/explanation/architecture.md`
+- Module reference: `docs/reference/modules.md`
+
+## Changelog
+
+- `2026-06-22`: Created local-only Vite baseline from the EXOFRAME concept.
+- `v0.1`: Added reusable components, article elements, motion, print styles, and future skill draft.
+- `Independent Palette System`: Split base/components from 10 independent palette modules.
+- `Docs And Skill Polish`: Added README screenshot, full usage notes, PPT workflow, ASCII alignment check, and stronger validation.

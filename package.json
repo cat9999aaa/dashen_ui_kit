@@ -7,8 +7,10 @@
     "dev": "vite --host 127.0.0.1",
     "build": "vite build",
     "preview": "vite preview --host 127.0.0.1",
+    "check:types": "tsc --noEmit",
     "check:local-assets": "node scripts/check-local-assets.mjs",
-    "check": "bun run check:local-assets && bun run build"
+    "check:ascii": "node scripts/check-ascii.mjs",
+    "check": "bun run check:types && bun run check:ascii && bun run check:local-assets && bun run build"
   },
   "dependencies": {
     "@fontsource/inter": "5.2.8",

@@ -102,3 +102,26 @@
 - Moved code block and syntax colors onto semantic variables.
 - Added multilingual README entry points: Chinese and English.
 - Updated architecture docs, module reference, and future skill references with palette independence rules.
+
+## Docs And Skill Polish
+
+- Added README screenshot placement and expanded Chinese/English usage guides:
+  - quick start;
+  - validation commands;
+  - module adoption order;
+  - theme and palette switching;
+  - palette list;
+  - skill usage;
+  - changelog.
+- Added `scripts/check-ascii.mjs`:
+  - validates `pre.ascii-wordmark` display widths;
+  - validates fenced ASCII blocks with box/block characters;
+  - rejects tabs and trailing whitespace inside checked ASCII blocks.
+- Added `check:types`, `check:ascii`, and a stricter `check` chain to `package.json`.
+- Expanded local asset scanning to include docs and skill HTML/CSS/JS assets.
+- Corrected the EXOFRAME ASCII wordmark so all visible rows are equal width.
+- Updated the future skill draft:
+  - expanded trigger description for front-end showcase and deck work;
+  - added PPT/deck output as a first-class surface;
+  - added `skill/references/ppt-workflow.md`;
+  - documented that actual `.pptx` creation should use the Presentations skill and `@oai/artifact-tool`, not `python-pptx`.
