@@ -1,0 +1,335 @@
+<!doctype html>
+<html lang="zh" data-theme="void" data-palette="amethyst">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/src/assets/favicon.svg" type="image/svg+xml" />
+    <title>EXOFRAME // Local Amethyst</title>
+  </head>
+  <body>
+    <div class="crt-scan"></div>
+    <div class="crt-vignette"></div>
+    <div class="crt-roll"></div>
+
+    <header class="status-bar">
+      <span class="status-dot"></span>
+      <span class="status-brand">EXOFRAME</span>
+      <span class="status-separator">::</span>
+      <span>LOCAL ONLY</span>
+      <nav class="status-nav" aria-label="Section navigation">
+        <a href="#palette">palette</a>
+        <a href="#components">instruments</a>
+        <a href="#patterns">patterns</a>
+        <a href="#type">type</a>
+        <a href="#prose">prose</a>
+        <a href="#export">export</a>
+      </nav>
+      <button class="theme-toggle" id="theme-toggle" type="button">PAPER</button>
+    </header>
+
+    <main>
+      <section class="hero wrap">
+        <pre class="ascii-wordmark phosphor" aria-label="EXOFRAME ASCII wordmark">
+███████╗██╗  ██╗ ██████╗ ███████╗██████╗  █████╗ ███╗   ███╗███████╗
+██╔════╝╚██╗██╔╝██╔═══██╗██╔════╝██╔══██╗██╔══██╗████╗ ████║██╔════╝
+█████╗   ╚███╔╝ ██║   ██║█████╗  ██████╔╝███████║██╔████╔██║█████╗
+██╔══╝   ██╔██╗ ██║   ██║██╔══╝  ██╔══██╗██╔══██║██║╚██╔╝██║██╔══╝
+███████╗██╔╝ ██╗╚██████╔╝██║     ██║  ██║██║  ██║██║ ╚═╝ ██║███████╗
+╚══════╝╚═╝  ╚═╝ ╚═════╝ ╚═╝     ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝     ╚═╝╚══════╝</pre>
+        <p class="tagline">紫磷终端 · 本地资产 · 可打印内容层</p>
+
+        <div class="terminal" aria-label="Interactive terminal">
+          <div class="terminal-head">
+            <i class="terminal-light" style="background: var(--color-danger)"></i>
+            <i class="terminal-light" style="background: var(--color-signal)"></i>
+            <i class="terminal-light" style="background: var(--color-success)"></i>
+            <span>operator-session // commands enabled</span>
+          </div>
+          <div class="terminal-log" id="terminal-log" aria-live="polite"></div>
+          <label class="command-line">
+            <span class="prompt">local<span class="path">/exo</span>$</span>
+            <input id="command-input" autocomplete="off" spellcheck="false" aria-label="Terminal command" />
+          </label>
+        </div>
+      </section>
+
+      <div class="divider"><b>════════</b> LOCAL MODULE TEST <b>════════</b></div>
+
+      <section class="wrap" id="palette">
+        <div class="eyebrow">// PALETTE — 01 AMETHYST</div>
+        <h2 class="section-title">PALETTE</h2>
+        <p class="subtle">紫磷为主，绿磷为激活，琥珀为信号。后续配色只替换独立 palette 文件。</p>
+        <div data-palette-gallery></div>
+      </section>
+
+      <section class="wrap" id="components">
+        <div class="eyebrow">// INSTRUMENTS — COMPONENT SURFACE</div>
+        <h2 class="section-title">INSTRUMENTS</h2>
+        <p class="subtle">组件层只消费语义 token，不直接绑定具体配色。</p>
+        <div class="panel-grid">
+          <div class="panel" data-label="BUTTONS">
+            <div class="badge-row">
+              <button class="exo-button" data-variant="primary">ENGAGE</button>
+              <button class="exo-button" data-variant="success">SYNC</button>
+              <button class="exo-button" data-variant="danger">ABORT</button>
+              <button class="exo-button" disabled>LOCKED</button>
+            </div>
+          </div>
+          <div class="panel" data-label="SIGNALS">
+            <div class="badge-row">
+              <span class="exo-badge" data-tone="primary">PRIMARY</span>
+              <span class="exo-badge" data-tone="success">PASS</span>
+              <span class="exo-badge" data-tone="signal">WARN</span>
+              <span class="exo-badge" data-tone="danger">FAIL</span>
+            </div>
+          </div>
+          <div class="panel" data-label="INPUT">
+            <label>
+              <span class="eyebrow">LOCAL PATH</span>
+              <input class="exo-field" value="tokens/palettes/01-amethyst.css" />
+            </label>
+          </div>
+          <div class="panel" data-label="FORM CONTROLS">
+            <div class="control-grid">
+              <label class="check-row"><input type="checkbox" checked />Enable local asset gate</label>
+              <label class="radio-row"><input type="radio" name="density" checked />Dense instrumentation</label>
+              <label class="switch-row"><input type="checkbox" checked />Reduced remote surface</label>
+            </div>
+          </div>
+          <div class="panel" data-label="ALERTS">
+            <div class="control-grid">
+              <div class="exo-alert" data-tone="success" data-label="PASS"><p>All runtime assets resolve locally.</p></div>
+              <div class="exo-alert" data-tone="signal" data-label="SIGNAL"><p>Print layer is active for document export.</p></div>
+              <div class="exo-alert" data-tone="danger" data-label="FAULT"><p>Remote CDN reference would fail the gate.</p></div>
+            </div>
+          </div>
+          <div class="panel" data-label="PROGRESS">
+            <div class="progress">
+              <div class="progress-label"><span>module coverage</span><span>72%</span></div>
+              <div class="progress-track"><div class="progress-fill" style="width:72%"></div></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="wrap" id="patterns">
+        <div class="eyebrow">// PATTERNS — NAVIGATION AND OVERLAYS</div>
+        <h2 class="section-title">PATTERNS</h2>
+        <p class="subtle">这些是第一版组件库要能复用的交互骨架，样式本地、行为轻量。</p>
+        <div class="panel-grid">
+          <div class="panel" data-label="NAVIGATION">
+            <nav class="exo-nav" aria-label="Demo navigation">
+              <a href="#patterns" aria-current="page">overview</a>
+              <a href="#components">components</a>
+              <a href="#prose">prose</a>
+              <a href="#export">export</a>
+            </nav>
+          </div>
+          <div class="panel" data-label="BREADCRUMB">
+            <nav class="breadcrumb" aria-label="Breadcrumb">
+              <a href="/">dashen_ui_kit</a>
+              <span>src</span>
+              <span>styles</span>
+              <span>components</span>
+            </nav>
+          </div>
+          <div class="panel" data-label="TABS">
+            <div class="tabs" data-tabs>
+              <div class="tab-list" role="tablist" aria-label="Shell views">
+                <button class="tab-button" role="tab" aria-selected="true" aria-controls="tab-app" id="tab-app-button" type="button">APP</button>
+                <button class="tab-button" role="tab" aria-selected="false" aria-controls="tab-doc" id="tab-doc-button" type="button">DOC</button>
+                <button class="tab-button" role="tab" aria-selected="false" aria-controls="tab-print" id="tab-print-button" type="button">PRINT</button>
+              </div>
+              <div class="tab-panel" id="tab-app" role="tabpanel" aria-labelledby="tab-app-button">Interactive application shell consumes components.</div>
+              <div class="tab-panel" id="tab-doc" role="tabpanel" aria-labelledby="tab-doc-button" hidden>Article shell consumes elements and code styling.</div>
+              <div class="tab-panel" id="tab-print" role="tabpanel" aria-labelledby="tab-print-button" hidden>Print shell consumes page rules and typography.</div>
+            </div>
+          </div>
+          <div class="panel" data-label="ACCORDION">
+            <div class="accordion">
+              <details open>
+                <summary>Why local-only?</summary>
+                <div class="accordion-body">The kit must work inside client projects, docs, PDFs, and future skill packaging without remote runtime assumptions.</div>
+              </details>
+              <details>
+                <summary>Why prose first?</summary>
+                <div class="accordion-body">A reusable UI without article and print discipline cannot serve WordPress, docs, or PDF output.</div>
+              </details>
+            </div>
+          </div>
+          <div class="panel" data-label="OVERLAYS">
+            <div class="badge-row">
+              <button class="exo-button" data-variant="primary" data-open-modal type="button">OPEN MODAL</button>
+              <button class="exo-button" data-variant="success" data-show-toast type="button">SHOW TOAST</button>
+              <span class="tooltip-anchor" tabindex="0" data-tooltip="Pure CSS tooltip, no remote package.">tooltip target</span>
+            </div>
+          </div>
+          <div class="panel" data-label="PAGINATION">
+            <nav class="pagination" aria-label="Pagination">
+              <a class="page-link" href="#patterns">‹</a>
+              <a class="page-link" href="#patterns">1</a>
+              <a class="page-link" href="#patterns" aria-current="page">2</a>
+              <a class="page-link" href="#patterns">3</a>
+              <a class="page-link" href="#patterns">›</a>
+            </nav>
+          </div>
+        </div>
+      </section>
+
+      <section class="wrap" id="type">
+        <div class="eyebrow">// TYPE — VOICE</div>
+        <h2 class="section-title">TYPE</h2>
+        <div class="panel type-specimen" data-label="FONT ROLES">
+          <div class="large phosphor">ASCII FIRST</div>
+          <div class="serif-line">屏幕可以复古，正文必须能读。</div>
+          <p>终端字重负责人格，明朝风格负责冲击，正文和打印层负责长期阅读。</p>
+          <div class="face-grid">
+            <div class="face"><div class="face-name" style="font-family:var(--font-mono)">JetBrains Mono</div><div class="face-role">TERMINAL</div></div>
+            <div class="face"><div class="face-name" style="font-family:var(--font-serif)">Shippori</div><div class="face-role">IMPACT</div></div>
+            <div class="face"><div class="face-name" style="font-family:var(--font-body)">Inter</div><div class="face-role">BODY</div></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="wrap" id="prose">
+        <div class="eyebrow">// PROSE — ARTICLE AND PRINT LAYER</div>
+        <h2 class="section-title">PROSE</h2>
+        <article class="article">
+          <div class="kick">FORMAT TEST / WORD TO PDF READY</div>
+          <h1>内容层不是附属品，<span class="em">它是骨架</span></h1>
+          <p class="lead">这套 UI 必须能服务应用、博客、文档、Word 转 PDF、代码说明和未来的 skill 分发。屏幕可以是紫磷终端，纸面必须是清醒的排版。</p>
+
+          <h2>标题阶层</h2>
+          <h3>H3 用来切分文章段落</h3>
+          <h4>H4 是局部结构</h4>
+          <h5>H5 是仪表标签</h5>
+          <h6>H6 是低声注释</h6>
+
+          <p>正文里有 <strong>粗体强调</strong>、<em>斜体</em>、<strong><em>粗斜体</em></strong>、<del>删除线</del>、<ins>插入</ins>、<mark>绿磷高亮</mark>，以及行内代码 <code>--color-primary</code>。链接使用 <a href="/docs/local-only">本地文档路径</a>，不依赖远程资源。</p>
+
+          <div class="callout" data-tone="signal">
+            <strong class="callout-title">CALLOUT / SIGNAL</strong>
+            Word、Markdown、WordPress、静态站都可以把这层当成内容格式化基底。
+          </div>
+
+          <blockquote>
+            引用不应该只是左边一条线。它应该像一次传输，一次截获，一段从系统深处浮上来的句子。
+            <cite>EXOFRAME prose rule</cite>
+          </blockquote>
+
+          <p class="pull">复古不是倒退，是把旧机器的灵魂接到新的输出设备上。</p>
+
+          <ul>
+            <li>无 CDN，所有资源本地化。</li>
+            <li>配色逐个模块推进。</li>
+            <li>文章和打印层优先级不低于组件。</li>
+          </ul>
+
+          <ol>
+            <li>写 token。</li>
+            <li>映射语义层。</li>
+            <li>验证屏幕和纸面。</li>
+          </ol>
+
+          <dl>
+            <dt>Skill-ready</dt>
+            <dd>未来迁移成 Codex skill 时，规则进入 SKILL.md，模板进入 assets，详细说明按需放 references。</dd>
+          </dl>
+
+          <aside>这里是旁注区域，适合放版本说明、引用来源、迁移提示或 Word 导入后的编辑注释。</aside>
+
+          <details>
+            <summary>展开一个可打印的细节块</summary>
+            <p>打印时保留内容结构，屏幕端继续保持终端样式。</p>
+          </details>
+
+          <table>
+            <thead><tr><th>Layer</th><th>Purpose</th><th>Status</th></tr></thead>
+            <tbody>
+              <tr><td>tokens</td><td>single source of truth</td><td>active</td></tr>
+              <tr><td>elements</td><td>article and HTML formatting</td><td>active</td></tr>
+              <tr><td>print</td><td>PDF/page output</td><td>active</td></tr>
+            </tbody>
+          </table>
+
+          <hr />
+
+          <figure>
+            <div class="diagram-demo" aria-label="Document pipeline diagram">
+              <div class="diagram-node">WORD</div>
+              <div class="diagram-arrow">→</div>
+              <div class="diagram-node">HTML</div>
+              <div class="diagram-arrow">→</div>
+              <div class="diagram-node">PDF</div>
+            </div>
+            <figcaption>Figure: one content layer feeding screen, document, and paged output.</figcaption>
+          </figure>
+
+          <div class="code-shell">
+            <div class="codebar"><span class="filename">apply-palette.ts</span><button class="code-copy" data-copy-code type="button">COPY</button><span class="language">TYPESCRIPT</span></div>
+            <pre><code class="language-typescript">type Surface = "void" | "paper";
+
+export function applyPalette(id: string, surface: Surface = "void") {
+  const root = document.documentElement;
+  root.dataset.palette = id;
+  root.dataset.theme = surface;
+  return { id, surface, localOnly: true };
+}</code></pre>
+          </div>
+
+          <div class="code-shell">
+            <div class="codebar"><span class="filename">print.css</span><button class="code-copy" data-copy-code type="button">COPY</button><span class="language">CSS</span></div>
+            <pre><code class="language-css">@page {
+  size: A4;
+  margin: 20mm 18mm;
+}
+
+.article blockquote,
+.code-shell,
+.article table {
+  break-inside: avoid;
+}</code></pre>
+          </div>
+
+          <section class="footnotes" aria-label="Footnotes">
+            <ol>
+              <li id="fn-1">脚注区域用于长文档和 PDF。屏幕端保持轻，打印端保持清楚。</li>
+            </ol>
+          </section>
+        </article>
+      </section>
+
+      <section class="wrap" id="export">
+        <div class="eyebrow">// EXPORT — WORD / HTML / PDF</div>
+        <h2 class="section-title">EXPORT</h2>
+        <div class="panel" data-label="PIPELINE">
+          <p class="subtle">Word 或 Markdown 输出 HTML 后，套 elements + print 层即可进入 PDF 渲染管线。屏幕壳在打印时自动隐藏。</p>
+          <button class="exo-button" data-variant="primary" data-print-page type="button">PRINT TEST</button>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer wrap">
+      <span><b>EXOFRAME</b> · local build · no CDN · skill-ready draft</span>
+      <span>palette 01 / amethyst</span>
+    </footer>
+
+    <div class="modal-backdrop" data-modal hidden>
+      <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+        <div class="modal-header">
+          <h2 class="modal-title" id="modal-title">LOCAL MODAL</h2>
+          <button class="exo-button" data-close-modal type="button">CLOSE</button>
+        </div>
+        <div class="modal-body">
+          This overlay is part of the reusable component shell. It keeps behavior local and styling token-driven.
+        </div>
+        <div class="modal-footer">
+          <button class="exo-button" data-variant="primary" data-close-modal type="button">CONFIRM</button>
+        </div>
+      </div>
+    </div>
+    <div class="toast-stack" data-toast-stack aria-live="polite"></div>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

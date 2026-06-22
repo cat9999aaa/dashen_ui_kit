@@ -1,0 +1,41 @@
+:root,
+[data-palette="amethyst"] {
+  --palette-name: "amethyst";
+  --violet-950: #160c27;
+  --violet-900: #24113f;
+  --violet-800: #391c62;
+  --violet-700: #4d2585;
+  --violet-600: #6330a6;
+  --violet-500: #7741c1;
+  --violet-400: #9d6be8;
+  --violet-300: #b98cff;
+  --violet-200: #c9b2ec;
+  --violet-100: #e4d8f8;
+  --violet-50: #f4effc;
+  --phosphor-lime: #9df542;
+  --signal-amber: #f0a030;
+  --danger-red: #ff4a52;
+  --signal-cyan: #4fd8ff;
+}
+
+[data-theme="void"] {
+  --color-primary: var(--violet-500);
+  --color-primary-strong: var(--violet-400);
+  --color-primary-glow: var(--violet-300);
+  --color-success: var(--phosphor-lime);
+  --color-signal: var(--signal-amber);
+  --color-danger: var(--danger-red);
+  --color-info: var(--signal-cyan);
+  --shadow-phosphor: 0 0 1px rgba(185, 140, 255, 0.85), 0 0 7px rgba(140, 90, 220, 0.5);
+}
+
+[data-theme="paper"] {
+  --color-primary: var(--violet-600);
+  --color-primary-strong: var(--violet-500);
+  --color-primary-glow: var(--violet-500);
+  --color-success: #4e8a0c;
+  --color-signal: #b8650e;
+  --color-danger: #b4232b;
+  --color-info: #0d7490;
+  --shadow-phosphor: none;
+}
