@@ -33,6 +33,8 @@ bun run dev
 bun run check:types
 bun run check:ascii
 bun run check:local-assets
+bun run check:skill
+bun run check:palettes
 bun run build
 bun run check
 ```
@@ -40,8 +42,10 @@ bun run check
 - `check:types`：运行 TypeScript 类型检查。
 - `check:ascii`：检查 ASCII/方块字标等宽、无 tab、无尾随空格。
 - `check:local-assets`：拒绝 CDN、Google Fonts、unpkg、jsDelivr 等远程运行时引用。
+- `check:skill`：校验 `skill/SKILL.md` frontmatter。
+- `check:palettes`：校验 10 套 palette 的变量契约和数据清单。
 - `build`：生成 Vite 生产构建。
-- `check`：按顺序执行类型、ASCII、本地资产和构建检查。
+- `check`：按顺序执行类型、ASCII、本地资产、skill 和构建检查。
 
 ## 目录
 
@@ -55,6 +59,9 @@ bun run check
 - `src/styles/print/`：打印和 PDF 输出。
 - `src/data/palettes.ts`：配色清单和展示数据。
 - `src/lib/`：本地交互逻辑。
+- `src/index.ts`：组件库 typed export 入口。
+- `docs/site/`：本地组件文档站。
+- `docs/deck/`：HTML PPT 示例。
 - `docs/DEVLOG.md`：开发步骤记录。
 - `skill/`：未来 skill 草案。
 
@@ -83,6 +90,32 @@ print
 ```
 
 组件只允许依赖语义变量，例如 `--color-primary`、`--color-card`、`--code-bg`、`--syntax-keyword`。不要在组件里写 `amethyst`、`azure` 这类具体配色名。
+
+### 作为包使用
+
+```ts
+import "dashen-ui-kit/styles.css";
+import { initExoframeUI, palettes } from "dashen-ui-kit";
+
+initExoframeUI();
+console.log(palettes);
+```
+
+API 文档见 `docs/reference/api.md`。
+
+### 本地文档站
+
+```text
+http://127.0.0.1:5173/docs/site/
+```
+
+### HTML PPT
+
+```text
+http://127.0.0.1:5173/docs/deck/exoframe-html-ppt.html
+```
+
+这个 PPT 是 HTML slide deck，不生成 `.pptx`。
 
 ### 切换配色和主题
 
@@ -124,10 +157,18 @@ print
 - `skill/SKILL.md`：EXOFRAME skill 主说明。
 - `skill/references/design-rules.md`：视觉和命名规则。
 - `skill/references/module-map.md`：模块迁移顺序。
-- `skill/references/ppt-workflow.md`：用这套 UI 做 PowerPoint 的流程。
+- `skill/agents/openai.yaml`：Codex skill 展示信息。
+- `skill/references/ppt-workflow.md`：用这套 UI 做 HTML 演示稿的流程。
 - `skill/assets/showcase-template/`：本地化展示模板。
+- `skill/assets/html-deck-template/`：HTML PPT 模板。
 
-当用户要求“用这套 UI 做 PPT/演示稿/报告 deck”时，skill 会要求读取 `ppt-workflow.md`，并通过 Presentations skill 与 `@oai/artifact-tool` 生成 `.pptx`。不得用 CDN、不得用 `python-pptx`，并且最终必须渲染检查重叠、裁切、换行和 ASCII 对齐。
+当用户要求“用这套 UI 做 PPT/演示稿/报告 deck”时，skill 会要求读取 `ppt-workflow.md`，并生成 HTML 形式的 slide deck，不生成 `.pptx`。不得用 CDN，最终必须在浏览器中检查重叠、裁切、换行和 ASCII 对齐。
+
+安装到本机 Codex：
+
+```bash
+bun run skill:install
+```
 
 ## ASCII 检查
 
@@ -148,3 +189,4 @@ ASCII 相关内容使用 `bun run check:ascii` 验证。规则：
 - `v0.1 Baseline Push`：加入数据驱动 palette gallery、组件、文章元素、GSAP 动效入口、打印/PDF 文档、架构文档和 skill 草案。
 - `Independent Palette System`：把基础层、组件层和配色层拆开，新增 10 套独立 palette，加入 `palette-system.css` 作为映射层。
 - `Docs And Skill Polish`：补充 README 截图、完整使用说明、PPT 工作流、ASCII 自动检查、本地资产扫描范围和验证命令。
+- `v0.2 Full-Form Push`：加入可安装 skill、HTML PPT、文档站、组件库导出、API 文档和字体子集化检查。

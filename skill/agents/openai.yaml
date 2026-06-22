@@ -1,0 +1,7 @@
+interface:
+  display_name: "EXOFRAME UI"
+  short_description: "Build local retro-futurist UI and HTML decks"
+  brand_color: "#9D6BE8"
+  default_prompt: "Use $exoframe-ui to build a local-only EXOFRAME interface or HTML presentation deck."
+policy:
+  allow_implicit_invocation: true

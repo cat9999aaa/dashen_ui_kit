@@ -1,12 +1,12 @@
-@import "@fontsource/inter/400.css";
-@import "@fontsource/inter/500.css";
-@import "@fontsource/inter/600.css";
-@import "@fontsource/jetbrains-mono/400.css";
-@import "@fontsource/jetbrains-mono/500.css";
-@import "@fontsource/jetbrains-mono/700.css";
-@import "@fontsource/jetbrains-mono/800.css";
-@import "@fontsource/shippori-mincho-b1/700.css";
-@import "@fontsource/shippori-mincho-b1/800.css";
+@import "@fontsource/inter/latin-400.css";
+@import "@fontsource/inter/latin-500.css";
+@import "@fontsource/inter/latin-600.css";
+@import "@fontsource/jetbrains-mono/latin-400.css";
+@import "@fontsource/jetbrains-mono/latin-500.css";
+@import "@fontsource/jetbrains-mono/latin-700.css";
+@import "@fontsource/jetbrains-mono/latin-800.css";
+@import "@fontsource/shippori-mincho-b1/latin-700.css";
+@import "@fontsource/shippori-mincho-b1/latin-800.css";
 
 @import "./tokens/base/surface.css";
 @import "./tokens/base/type.css";
@@ -339,6 +339,83 @@
   padding: 24px 18px 34px;
   font-family: var(--font-mono);
   font-size: 0.6875rem;
+}
+
+.deck-body {
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.deck-shell {
+  width: min(100vw, 1600px);
+  min-height: 100vh;
+  margin-inline: auto;
+}
+
+.deck-slide {
+  min-height: 100vh;
+  padding: clamp(3rem, 7vw, 7rem);
+}
+
+.deck-slide[hidden] {
+  display: none;
+}
+
+.deck-title {
+  margin: 0;
+  color: var(--color-primary-glow);
+  font-family: var(--font-mono);
+  font-size: clamp(4rem, 12vw, 10rem);
+  letter-spacing: 0.02em;
+  line-height: 0.9;
+  text-shadow: var(--text-glow);
+}
+
+.deck-heading {
+  max-width: 14ch;
+  margin: 0 0 2rem;
+  font-family: var(--font-serif);
+  font-size: clamp(3rem, 8vw, 7rem);
+  line-height: 0.98;
+}
+
+.deck-lead {
+  max-width: 45rem;
+  color: var(--color-muted);
+  font-size: clamp(1.125rem, 2.2vw, 1.75rem);
+}
+
+.deck-controls {
+  position: fixed;
+  right: 18px;
+  bottom: 18px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid var(--color-line);
+  background: color-mix(in srgb, var(--color-bg) 88%, transparent);
+  padding: 8px;
+  color: var(--color-muted);
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+}
+
+@media print {
+  .deck-body {
+    overflow: visible;
+    background: #000;
+  }
+
+  .deck-slide,
+  .deck-slide[hidden] {
+    break-after: page;
+    display: block;
+    min-height: 100vh;
+  }
+
+  .deck-controls {
+    display: none;
+  }
 }
 
 @media (max-width: 520px) {

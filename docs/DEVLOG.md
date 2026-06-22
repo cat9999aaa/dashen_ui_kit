@@ -125,3 +125,16 @@
   - added PPT/deck output as a first-class surface;
   - added `skill/references/ppt-workflow.md`;
   - documented that actual `.pptx` creation should use the Presentations skill and `@oai/artifact-tool`, not `python-pptx`.
+
+## v0.2 Full-Form Push
+
+- Started converting the remaining roadmap into concrete project surfaces.
+- Added installable skill metadata at `skill/agents/openai.yaml`.
+- Added `scripts/install-skill.mjs` and `bun run skill:install` to copy the skill to `${CODEX_HOME:-~/.codex}/skills/exoframe-ui`.
+- Added `check:skill` to validate `skill/SKILL.md`.
+- Replaced the old `.pptx` wording with an HTML deck workflow because EXOFRAME PPT output should be HTML, not PowerPoint binary.
+- Added Vite multi-entry build for showcase, docs site, and HTML PPT.
+- Added `src/index.ts` as the typed package export surface.
+- Added `docs/reference/api.md`, `docs/how-to/html-ppt.md`, and `docs/how-to/docs-site.md`.
+- Switched font imports to subsetted `latin-*` CSS files and added `check:font-imports`.
+- Added `check:palettes` to keep all ten palettes aligned with the manifest and variable contract.

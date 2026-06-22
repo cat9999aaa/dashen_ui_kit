@@ -56,6 +56,9 @@
 
 ## Runtime
 
+- `src/index.ts`
+- `src/docs.ts`
+- `src/deck.ts`
 - `src/lib/terminal.ts`
 - `src/lib/theme.ts`
 - `src/lib/copy-code.ts`
@@ -75,3 +78,16 @@ Palette files define:
 - foreground helpers for primary and active states.
 
 Do not put component selectors in palette files.
+
+## Package Surface
+
+- Main typed export: `dashen-ui-kit`.
+- CSS export: `dashen-ui-kit/styles.css`.
+- Palette manifest export: `dashen-ui-kit/palettes`.
+- Skill entry export: `dashen-ui-kit/skill`.
+
+## Browser Entries
+
+- `index.html`: primary showcase.
+- `docs/site/index.html`: local documentation site.
+- `docs/deck/exoframe-html-ppt.html`: HTML PPT deck.

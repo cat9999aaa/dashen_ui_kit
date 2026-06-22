@@ -22,10 +22,14 @@ Default local URL: `http://127.0.0.1:5173/`
 ## What Is Included
 
 - Local Vite front-end showcase with no CDN runtime assets.
+- Local docs site at `docs/site/`.
+- HTML PPT deck at `docs/deck/exoframe-html-ppt.html`.
 - Independent palette system with 10 palettes.
 - Terminal, CRT, ASCII, article, code, component, motion, print, and PDF-oriented layers.
 - Future Codex skill draft in `skill/`, including an EXOFRAME PowerPoint workflow reference.
+- Installable `$exoframe-ui` skill metadata and local install script.
 - Validation scripts for TypeScript, local assets, ASCII alignment, and production build.
+- Typed package exports through `src/index.ts`.
 
 ## Documentation
 
@@ -42,3 +46,4 @@ Default local URL: `http://127.0.0.1:5173/`
 - `v0.1`: Added reusable components, article elements, motion, print styles, and future skill draft.
 - `Independent Palette System`: Split base/components from 10 independent palette modules.
 - `Docs And Skill Polish`: Added README screenshot, full usage notes, PPT workflow, ASCII alignment check, and stronger validation.
+- `v0.2`: Adds installable skill metadata, HTML PPT workflow, docs/deck/library surfaces, and font-size controls.

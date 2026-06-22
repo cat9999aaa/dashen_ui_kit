@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="zh" data-theme="void" data-palette="azure">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EXOFRAME Docs // dashen_ui_kit</title>
+  </head>
+  <body>
+    <div class="crt-scan"></div>
+    <header class="status-bar">
+      <span class="status-dot"></span>
+      <span class="status-brand">EXOFRAME DOCS</span>
+      <span class="status-separator">::</span>
+      <span>LOCAL COMPONENT LIBRARY</span>
+      <nav class="status-nav" aria-label="Docs navigation">
+        <a href="#install">install</a>
+        <a href="#api">api</a>
+        <a href="#tokens">tokens</a>
+        <a href="#deck">html ppt</a>
+      </nav>
+      <button class="theme-toggle" id="theme-toggle" type="button">PAPER</button>
+    </header>
+
+    <main>
+      <section class="wrap hero">
+        <div class="eyebrow">// DASHEN UI KIT — DOCS SITE</div>
+        <h1 class="section-title">LOCAL UI LIBRARY</h1>
+        <p class="subtle">组件、配色、文章、打印、HTML PPT 和 Codex skill 共用一套 EXOFRAME 规则。</p>
+        <div class="panel-grid">
+          <div class="panel" data-label="PACKAGE">
+            <p><code>dashen-ui-kit</code> exposes typed runtime helpers and local CSS layers.</p>
+          </div>
+          <div class="panel" data-label="NO CDN">
+            <p>Fonts, Prism, GSAP, docs, deck templates, and skill assets stay local.</p>
+          </div>
+          <div class="panel" data-label="SKILL">
+            <p>Run <code>bun run skill:install</code> to install <code>$exoframe-ui</code>.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="wrap" id="install">
+        <div class="eyebrow">// INSTALL</div>
+        <h2 class="section-title">USAGE</h2>
+        <div class="code-shell">
+          <div class="codebar"><span class="filename">terminal</span><button class="code-copy" data-copy-code type="button">COPY</button><span class="language">BASH</span></div>
+          <pre><code class="language-bash">bun install
+bun run dev
+bun run check
+bun run skill:install</code></pre>
+        </div>
+      </section>
+
+      <section class="wrap" id="api">
+        <div class="eyebrow">// API</div>
+        <h2 class="section-title">EXPORTS</h2>
+        <div class="code-shell">
+          <div class="codebar"><span class="filename">app.ts</span><button class="code-copy" data-copy-code type="button">COPY</button><span class="language">TYPESCRIPT</span></div>
+          <pre><code class="language-typescript">import "dashen-ui-kit/styles.css";
+import { initExoframeUI, palettes } from "dashen-ui-kit";
+
+initExoframeUI();
+console.log(palettes.map((palette) =&gt; palette.id));</code></pre>
+        </div>
+      </section>
+
+      <section class="wrap" id="tokens">
+        <div class="eyebrow">// PALETTE</div>
+        <h2 class="section-title">TOKENS</h2>
+        <p class="subtle">这个文档站也直接消费 palette gallery，证明文档不是第二套样式。</p>
+        <div data-palette-gallery></div>
+      </section>
+
+      <section class="wrap" id="deck">
+        <div class="eyebrow">// HTML PPT</div>
+        <h2 class="section-title">DECK</h2>
+        <div class="panel" data-label="LOCAL SLIDES">
+          <p>HTML deck lives at <a href="/docs/deck/exoframe-html-ppt.html">docs/deck/exoframe-html-ppt.html</a> and exports through print media instead of `.pptx`.</p>
+        </div>
+      </section>
+    </main>
+
+    <script type="module" src="/src/docs.ts"></script>
+  </body>
+</html>

@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="zh" data-theme="void" data-palette="phosphor">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EXOFRAME HTML PPT</title>
+  </head>
+  <body class="deck-body">
+    <main class="deck-shell" aria-live="polite">
+      <section class="deck-slide" aria-labelledby="slide-1-title">
+        <div class="eyebrow">// HTML PPT — LOCAL ONLY</div>
+        <h1 class="deck-title" id="slide-1-title">EXOFRAME</h1>
+        <p class="deck-lead">A reusable terminal-grade UI language for apps, docs, and browser-native decks.</p>
+        <pre class="ascii-wordmark phosphor" aria-label="EXOFRAME ASCII wordmark">
+███████╗██╗  ██╗ ██████╗ ███████╗██████╗  █████╗ ███╗   ███╗███████╗
+██╔════╝╚██╗██╔╝██╔═══██╗██╔════╝██╔══██╗██╔══██╗████╗ ████║██╔════╝
+█████╗   ╚███╔╝ ██║   ██║█████╗  ██████╔╝███████║██╔████╔██║█████╗░░
+██╔══╝   ██╔██╗ ██║   ██║██╔══╝  ██╔══██╗██╔══██║██║╚██╔╝██║██╔══╝░░
+███████╗██╔╝ ██╗╚██████╔╝██║     ██║  ██║██║  ██║██║ ╚═╝ ██║███████╗
+╚══════╝╚═╝  ╚═╝ ╚═════╝ ╚═╝     ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝     ╚═╝╚══════╝</pre>
+      </section>
+
+      <section class="deck-slide" aria-labelledby="slide-2-title" hidden>
+        <div class="eyebrow">// SYSTEM LAYERS</div>
+        <h2 class="deck-heading" id="slide-2-title">模块先行，配色独立</h2>
+        <div class="panel-grid">
+          <div class="panel" data-label="TOKENS"><p>Base tokens define spacing, type, radius, surface, and motion.</p></div>
+          <div class="panel" data-label="PALETTES"><p>Each palette owns raw `--palette-*` values only.</p></div>
+          <div class="panel" data-label="COMPONENTS"><p>Components consume semantic variables and stay reusable.</p></div>
+        </div>
+      </section>
+
+      <section class="deck-slide" aria-labelledby="slide-3-title" hidden>
+        <div class="eyebrow">// OUTPUTS</div>
+        <h2 class="deck-heading" id="slide-3-title">同一套 UI，三种输出</h2>
+        <div class="diagram-demo">
+          <div class="diagram-node">APP</div>
+          <div class="diagram-arrow">→</div>
+          <div class="diagram-node">DOCS</div>
+          <div class="diagram-arrow">→</div>
+          <div class="diagram-node">HTML PPT</div>
+        </div>
+        <p class="deck-lead">Deck output remains browser-native, keyboard navigable, printable, and local-only.</p>
+      </section>
+    </main>
+
+    <footer class="deck-controls">
+      <button class="exo-button" data-deck-prev type="button">PREV</button>
+      <span data-deck-counter>1 / 3</span>
+      <button class="exo-button" data-variant="primary" data-deck-next type="button">NEXT</button>
+    </footer>
+
+    <script type="module" src="/src/deck.ts"></script>
+  </body>
+</html>

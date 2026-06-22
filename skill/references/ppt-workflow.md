@@ -1,33 +1,32 @@
-# EXOFRAME PPT Workflow
+# EXOFRAME HTML Deck Workflow
 
-Use this reference when a user asks for a PowerPoint, pitch deck, report deck, keynote-style deck, or slide template using the EXOFRAME UI system.
+Use this reference when a user asks for a PPT, presentation, report deck, pitch deck, or slide template using the EXOFRAME UI system. In this skill, "PPT" means an HTML slide deck, not a `.pptx` file.
 
 ## Route
 
-- Use the local Presentations skill for actual `.pptx` creation.
-- Use `@oai/artifact-tool` from JavaScript ES modules. Do not use `python-pptx`.
-- Keep temporary build files outside the repository unless the user asks for source files to be committed.
-- Deliver the final `.pptx` in the requested path or a clear local output path.
+- Create a local HTML deck. Do not create `.pptx`.
+- Start from `assets/html-deck-template/` when a target project needs a reusable starter.
+- Keep CSS and JavaScript local. Do not use CDN fonts, remote image URLs, or remote slide frameworks.
+- Deliver an `.html` file plus any local assets needed by that file.
 
 ## Visual System
 
 - Build from EXOFRAME tokens: terminal surfaces, CRT texture, ASCII identifiers, instrument panels, palette accent lines, and strong local typography.
 - Use one active palette per deck unless the user asks for a palette comparison slide.
-- Prefer full-canvas compositions over dense UI card grids.
-- Keep slide content high-impact and readable: deck titles at least 50pt, slide titles at least 35pt, body text at least 16pt.
+- Use full-viewport slides with `16 / 9` composition and print styles for export.
+- Keep slide content high-impact and readable: titles large, body text sparse, and no cramped dashboard grids.
 - Do not use franchise IP, copied UI, remote assets, or CDN-hosted fonts/images.
 
-## Slide Patterns
+## HTML Deck Behavior
 
-- Title: large monospace or serif title, short subtitle, palette accent rule, optional ASCII code tag.
-- Section divider: oversized section number, terminal prompt line, sparse supporting text.
-- Concept slide: one strong statement, one evidence block, one visual field.
-- Component showcase: limited panels with token labels, not a cluttered dashboard.
-- Process slide: native PowerPoint shapes for simple flows; keep connectors behind labels.
+- Each slide should be a `<section class="deck-slide">`.
+- Add keyboard navigation with ArrowLeft, ArrowRight, Home, and End.
+- Add visible slide counters and semantic headings.
+- Support print/export by using `@media print` and page breaks.
+- Keep ASCII in fixed-width blocks with `white-space: pre` and no wrapping.
 
 ## QA
 
-- Render every final slide and inspect previews before delivery.
-- Fix unintended overlap, clipping, wrapping, broken connectors, and unreadable contrast.
-- Keep ASCII in fixed-width text boxes with wrapping disabled or with enough width to preserve line breaks.
-- If research or external facts inform slide content, cite sources in the final response.
+- Open the final deck in a browser and inspect desktop and mobile-ish widths.
+- Verify keyboard navigation, no horizontal overflow, no text overlap, and no clipped ASCII.
+- Run the repository ASCII and local-asset checks when the deck lives in this project.

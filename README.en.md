@@ -33,6 +33,8 @@ bun run dev
 bun run check:types
 bun run check:ascii
 bun run check:local-assets
+bun run check:skill
+bun run check:palettes
 bun run build
 bun run check
 ```
@@ -40,6 +42,8 @@ bun run check
 - `check:types`: TypeScript validation.
 - `check:ascii`: ASCII alignment, tab, and trailing whitespace validation.
 - `check:local-assets`: rejects CDN, Google Fonts, unpkg, jsDelivr, and similar remote runtime references.
+- `check:skill`: validates `skill/SKILL.md` frontmatter.
+- `check:palettes`: validates palette variables and manifest entries.
 - `build`: production Vite build.
 - `check`: full validation chain.
 
@@ -55,6 +59,9 @@ bun run check
 - `src/styles/print/`: print and PDF output.
 - `src/data/palettes.ts`: palette manifest and showcase data.
 - `src/lib/`: local runtime behavior.
+- `src/index.ts`: typed package export.
+- `docs/site/`: local component docs site.
+- `docs/deck/`: HTML PPT example.
 - `docs/DEVLOG.md`: development log.
 - `skill/`: future skill draft.
 
@@ -83,6 +90,32 @@ print
 ```
 
 Components should only depend on semantic variables such as `--color-primary`, `--color-card`, `--code-bg`, and `--syntax-keyword`. Do not make components depend on concrete palette names such as `amethyst` or `azure`.
+
+### Package Usage
+
+```ts
+import "dashen-ui-kit/styles.css";
+import { initExoframeUI, palettes } from "dashen-ui-kit";
+
+initExoframeUI();
+console.log(palettes);
+```
+
+API docs live in `docs/reference/api.md`.
+
+### Local Docs Site
+
+```text
+http://127.0.0.1:5173/docs/site/
+```
+
+### HTML PPT
+
+```text
+http://127.0.0.1:5173/docs/deck/exoframe-html-ppt.html
+```
+
+This PPT is an HTML slide deck, not a `.pptx` file.
 
 ### Palette And Theme
 
@@ -124,10 +157,18 @@ The kit currently ships with 10 palettes:
 - `skill/SKILL.md`: main EXOFRAME skill instructions.
 - `skill/references/design-rules.md`: visual and naming rules.
 - `skill/references/module-map.md`: module adoption order.
-- `skill/references/ppt-workflow.md`: PowerPoint workflow using this UI system.
+- `skill/agents/openai.yaml`: Codex skill display metadata.
+- `skill/references/ppt-workflow.md`: HTML presentation workflow using this UI system.
 - `skill/assets/showcase-template/`: local-only starter template.
+- `skill/assets/html-deck-template/`: HTML PPT template.
 
-When a user asks for a PPT, presentation, report deck, or slide template using this UI, the skill routes Codex to `ppt-workflow.md`, the Presentations skill, and `@oai/artifact-tool`. It forbids CDN assets and `python-pptx`, and requires rendered QA for overlap, clipping, wrapping, contrast, and ASCII alignment.
+When a user asks for a PPT, presentation, report deck, or slide template using this UI, the skill routes Codex to `ppt-workflow.md` and creates an HTML slide deck instead of a `.pptx` file. It forbids CDN assets and requires browser QA for overlap, clipping, wrapping, contrast, and ASCII alignment.
+
+Install into local Codex:
+
+```bash
+bun run skill:install
+```
 
 ## ASCII Validation
 
@@ -148,3 +189,4 @@ Run `bun run check:ascii` after editing ASCII content. It validates:
 - `v0.1 Baseline Push`: Added data-driven palette gallery, components, article elements, GSAP motion entry, print/PDF docs, architecture docs, and skill draft.
 - `Independent Palette System`: Split base/components from 10 independent palette modules and added `palette-system.css` as the mapping layer.
 - `Docs And Skill Polish`: Added README screenshot, full usage notes, PPT workflow, ASCII validation, broader local asset scanning, and the full validation command chain.
+- `v0.2 Full-Form Push`: Adds installable skill metadata, HTML PPT, docs site, package exports, API docs, and font subset checks.

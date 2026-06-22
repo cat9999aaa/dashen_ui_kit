@@ -1,16 +1,46 @@
 {
   "name": "dashen-ui-kit",
-  "version": "0.1.0",
-  "private": true,
+  "version": "0.2.0",
+  "private": false,
   "type": "module",
+  "module": "./dist/library/index.js",
+  "types": "./dist/library/index.d.ts",
+  "files": [
+    "dist",
+    "src",
+    "skill",
+    "docs/reference",
+    "docs/how-to",
+    "README.md",
+    "README.zh-CN.md",
+    "README.en.md"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/library/index.d.ts",
+      "default": "./dist/library/index.js"
+    },
+    "./styles.css": "./src/styles/main.css",
+    "./palettes": "./src/data/palettes.ts",
+    "./skill": "./skill/SKILL.md"
+  },
+  "sideEffects": [
+    "**/*.css"
+  ],
   "scripts": {
     "dev": "vite --host 127.0.0.1",
-    "build": "vite build",
+    "build:app": "vite build",
+    "build:types": "tsc -p tsconfig.lib.json",
+    "build": "bun run build:app && bun run build:types",
     "preview": "vite preview --host 127.0.0.1",
     "check:types": "tsc --noEmit",
     "check:local-assets": "node scripts/check-local-assets.mjs",
     "check:ascii": "node scripts/check-ascii.mjs",
-    "check": "bun run check:types && bun run check:ascii && bun run check:local-assets && bun run build"
+    "check:skill": "python3 /home/cat9999sss/.codex/skills/.system/skill-creator/scripts/quick_validate.py skill",
+    "skill:install": "node scripts/install-skill.mjs",
+    "check:font-imports": "node scripts/check-font-imports.mjs",
+    "check:palettes": "node scripts/check-palettes.mjs",
+    "check": "bun run check:types && bun run check:ascii && bun run check:local-assets && bun run check:skill && bun run check:font-imports && bun run check:palettes && bun run build"
   },
   "dependencies": {
     "@fontsource/inter": "5.2.8",

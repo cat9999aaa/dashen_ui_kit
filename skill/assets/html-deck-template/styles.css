@@ -1,0 +1,98 @@
+:root {
+  --color-bg: #041407;
+  --color-surface: #08250d;
+  --color-card: #0d3b15;
+  --color-text: #f0fff0;
+  --color-muted: #b6f5b9;
+  --color-line: #13551f;
+  --color-primary-glow: #83e68b;
+  --color-success: #adff2f;
+  --font-mono: "JetBrains Mono", "SFMono-Regular", Consolas, monospace;
+  --font-body: Inter, system-ui, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  overflow: hidden;
+  background: radial-gradient(circle at 50% 0%, #0d3b15, var(--color-bg) 58%);
+  color: var(--color-text);
+  font-family: var(--font-body);
+}
+
+.deck-slide {
+  min-height: 100vh;
+  padding: clamp(3rem, 7vw, 7rem);
+}
+
+.deck-title,
+.deck-heading,
+.eyebrow,
+.deck-controls {
+  font-family: var(--font-mono);
+}
+
+.deck-title {
+  margin: 0;
+  color: var(--color-primary-glow);
+  font-size: clamp(4rem, 12vw, 10rem);
+  line-height: 0.9;
+}
+
+.deck-heading {
+  max-width: 14ch;
+  margin: 0;
+  font-size: clamp(3rem, 8vw, 7rem);
+  line-height: 0.98;
+}
+
+.deck-lead {
+  max-width: 42rem;
+  color: var(--color-muted);
+  font-size: clamp(1.125rem, 2.2vw, 1.75rem);
+}
+
+.eyebrow {
+  color: var(--color-success);
+  letter-spacing: 0.18em;
+}
+
+.deck-controls {
+  position: fixed;
+  right: 18px;
+  bottom: 18px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  border: 1px solid var(--color-line);
+  background: color-mix(in srgb, var(--color-bg) 88%, transparent);
+  padding: 8px;
+}
+
+.exo-button {
+  cursor: pointer;
+  border: 1px solid var(--color-line);
+  background: var(--color-card);
+  color: var(--color-text);
+  padding: 8px 12px;
+  font: inherit;
+}
+
+@media print {
+  body {
+    overflow: visible;
+  }
+
+  .deck-slide,
+  .deck-slide[hidden] {
+    break-after: page;
+    display: block;
+  }
+
+  .deck-controls {
+    display: none;
+  }
+}

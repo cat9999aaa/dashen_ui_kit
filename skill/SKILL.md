@@ -1,11 +1,11 @@
 ---
 name: exoframe-ui
-description: Use when building IP-safe retro-futurist UI, article typography, syntax highlighting, motion, print/PDF styles, palette modules, front-end showcase screens, or PowerPoint decks based on the EXOFRAME design system.
+description: Use when building IP-safe retro-futurist UI, article typography, syntax highlighting, motion, print/PDF styles, palette modules, front-end showcase screens, or HTML presentation decks based on the EXOFRAME design system.
 ---
 
 # EXOFRAME UI
 
-Build with the EXOFRAME system when a project needs original terminal/CRT/ASCII-inspired UI, strong prose formatting, local-only assets, palette-driven surfaces, print/PDF readiness, or EXOFRAME-themed presentation decks.
+Build with the EXOFRAME system when a project needs original terminal/CRT/ASCII-inspired UI, strong prose formatting, local-only assets, palette-driven surfaces, print/PDF readiness, or EXOFRAME-themed HTML presentation decks.
 
 ## Core Rules
 
@@ -13,7 +13,7 @@ Build with the EXOFRAME system when a project needs original terminal/CRT/ASCII-
 - Do not use CDN assets. Use local packages or bundled assets.
 - Keep modules small: tokens, palettes, elements, components, motion, and print stay separate.
 - Keep palette files independent from components. Components consume semantic variables only.
-- Treat article typography, print output, and deck output as first-class surfaces.
+- Treat article typography, print output, and HTML deck output as first-class surfaces.
 - Respect `prefers-reduced-motion`.
 - Keep ASCII art monospace, non-wrapping, and equal-width line by line.
 
@@ -29,5 +29,6 @@ Build with the EXOFRAME system when a project needs original terminal/CRT/ASCII-
 
 - Read `references/design-rules.md` before making visual or naming decisions.
 - Read `references/module-map.md` before copying modules into another project.
-- Read `references/ppt-workflow.md` before creating a PowerPoint or deck with this visual system.
+- Read `references/ppt-workflow.md` before creating an HTML presentation deck with this visual system.
 - Use `assets/showcase-template/` as a minimal local-only starter when a target project needs a demo shell.
+- Use `assets/html-deck-template/` as a minimal local-only starter when a target project needs a slide deck.
