@@ -2,7 +2,7 @@
 
 `dashen_ui_kit` is a local-only, reusable, visually intense front-end UI kit draft. The current direction is EXOFRAME: terminal, CRT, ASCII, instrument panels, bold palettes, prose formatting, code highlighting, motion, print/PDF output, and future Codex skill reuse in one system.
 
-[Live Demo](https://uiskill.dashen.wang/) · [English Demo](https://uiskill.dashen.wang/en.html) · [Docs](https://uiskill.dashen.wang/docs/site/) · [English Docs](https://uiskill.dashen.wang/docs/site/en.html) · [HTML PPT](https://uiskill.dashen.wang/docs/deck/exoframe-html-ppt.html)
+[Live Demo](https://uiskill.dashen.wang/) · [Usage](https://uiskill.dashen.wang/usage.html) · [API](https://uiskill.dashen.wang/api.html) · [Palettes](https://uiskill.dashen.wang/palettes.html) · [Demos](https://uiskill.dashen.wang/components.html) · [Skill](https://uiskill.dashen.wang/skill.html) · [Theme Builder](https://uiskill.dashen.wang/theme-builder.html) · [About](https://uiskill.dashen.wang/about.html) · [English](https://uiskill.dashen.wang/en.html) · [HTML PPT](https://uiskill.dashen.wang/docs/deck/exoframe-html-ppt.html)
 
 ![EXOFRAME showcase](docs/assets/showcase-amethyst.png)
 
@@ -54,8 +54,9 @@ bun run check
 - `check:skill`: validates `skill/SKILL.md` frontmatter.
 - `check:palettes`: validates palette variables and manifest entries.
 - `check:geo`: validates sitemap, robots, llms files, and multilingual metadata.
+- `pages:generate`: generates multilingual page shells from `scripts/seo-data.mjs`.
 - `build`: production Vite build.
-- `check`: full validation chain.
+- `check`: generates pages/GEO and runs the full validation chain.
 
 ## Structure
 
@@ -70,6 +71,13 @@ bun run check
 - `src/data/palettes.ts`: palette manifest and showcase data.
 - `src/lib/`: local runtime behavior.
 - `src/index.ts`: typed package export.
+- `usage.html` / `usage.en.html`: usage pages.
+- `api.html` / `api.en.html`: API pages.
+- `palettes.html` / `palettes.en.html`: palette pages.
+- `components.html` / `components.en.html`: component demo pages.
+- `skill.html` / `skill.en.html`: skill pages.
+- `theme-builder.html` / `theme-builder.en.html`: theme builder pages.
+- `about.html` / `about.en.html`: Wang Dashen authority pages.
 - `docs/site/`: local component docs site.
 - `docs/site/en.html`: English component docs entry.
 - `docs/deck/`: HTML PPT example.
@@ -200,7 +208,7 @@ Run `bun run check:ascii` after editing ASCII content. It validates:
 - GitHub Pages URL: `https://uiskill.dashen.wang/`.
 - `public/sitemap.xml`, `public/robots.txt`, `public/llms.txt`, `public/llms-full.txt`, and `public/ai.txt` are generated with `bun run geo:generate`.
 - Pages include canonical links, Open Graph, Twitter cards, JSON-LD, and `hreflang`.
-- The Chinese page is the primary entry; `en.html`, `docs/site/en.html`, and `docs/deck/exoframe-html-ppt.en.html` are directly accessible English pages.
+- The Chinese page is the primary entry; `*.en.html`, `docs/site/en.html`, and `docs/deck/exoframe-html-ppt.en.html` are directly accessible English pages.
 
 ## Changelog
 
@@ -210,3 +218,4 @@ Run `bun run check:ascii` after editing ASCII content. It validates:
 - `Docs And Skill Polish`: Added README screenshot, full usage notes, PPT workflow, ASCII validation, broader local asset scanning, and the full validation command chain.
 - `v0.2 Full-Form Push`: Adds installable skill metadata, HTML PPT, docs site, package exports, API docs, and font subset checks.
 - `GitHub Pages And GEO`: Adds Pages deployment, sitemap/robots/llms/ai files, and zh/en showcase, docs, and HTML PPT entry points.
+- `Multi-page Skill Site`: Splits the showcase into zh/en pages for overview, usage, API, palettes, component demos, skill, theme builder, and Wang Dashen authority, with global navigation and persistent palette/theme switching.

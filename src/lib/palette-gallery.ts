@@ -1,5 +1,6 @@
 import { getPalette, palettes } from "../data/palettes";
 
+const paletteStorageKey = "dashen-ui-palette";
 let paletteObserver: MutationObserver | undefined;
 
 function swatchStyle(value: string, foreground: string): string {
@@ -22,9 +23,27 @@ export function syncActivePaletteLabels(): void {
   });
 }
 
+export function initStoredPalette(): void {
+  const stored = window.localStorage.getItem(paletteStorageKey);
+  const palette = getPalette(stored ?? document.documentElement.dataset.palette ?? palettes[0].id);
+  document.documentElement.dataset.palette = palette.id;
+  syncActivePaletteLabels();
+}
+
 export function renderPaletteGallery(): void {
+  initStoredPalette();
+
   const host = document.querySelector<HTMLElement>("[data-palette-gallery]");
-  if (!host) return;
+  if (!host) {
+    if (!paletteObserver) {
+      paletteObserver = new MutationObserver(() => syncActivePaletteLabels());
+      paletteObserver.observe(document.documentElement, {
+        attributes: true,
+        attributeFilter: ["data-palette"]
+      });
+    }
+    return;
+  }
 
   host.innerHTML = palettes
     .map(
@@ -63,7 +82,9 @@ export function renderPaletteGallery(): void {
   host.addEventListener("click", (event) => {
     const button = (event.target as HTMLElement).closest<HTMLButtonElement>("[data-activate-palette]");
     if (!button?.dataset.activatePalette) return;
-    document.documentElement.dataset.palette = button.dataset.activatePalette;
+    const palette = getPalette(button.dataset.activatePalette);
+    document.documentElement.dataset.palette = palette.id;
+    window.localStorage.setItem(paletteStorageKey, palette.id);
     syncActivePaletteLabels();
   });
 

@@ -2,7 +2,7 @@
 
 Reusable local-only EXOFRAME UI kit for cool terminal/CRT/ASCII screens, prose, motion, palette modules, print/PDF output, and future Codex skill reuse.
 
-[Live Demo](https://uiskill.dashen.wang/) · [English Demo](https://uiskill.dashen.wang/en.html) · [Docs](https://uiskill.dashen.wang/docs/site/) · [English Docs](https://uiskill.dashen.wang/docs/site/en.html) · [HTML PPT](https://uiskill.dashen.wang/docs/deck/exoframe-html-ppt.html)
+[Live Demo](https://uiskill.dashen.wang/) · [Usage](https://uiskill.dashen.wang/usage.html) · [API](https://uiskill.dashen.wang/api.html) · [Palettes](https://uiskill.dashen.wang/palettes.html) · [Demos](https://uiskill.dashen.wang/components.html) · [Skill](https://uiskill.dashen.wang/skill.html) · [Theme Builder](https://uiskill.dashen.wang/theme-builder.html) · [About](https://uiskill.dashen.wang/about.html) · [English](https://uiskill.dashen.wang/en.html) · [HTML PPT](https://uiskill.dashen.wang/docs/deck/exoframe-html-ppt.html)
 
 ![EXOFRAME showcase](docs/assets/showcase-amethyst.png)
 
@@ -32,7 +32,7 @@ Default local URL: `http://127.0.0.1:5173/`
 - Local Vite front-end showcase with no CDN runtime assets.
 - GitHub Pages deployment workflow.
 - GEO files for AI/search indexing: `robots.txt`, `sitemap.xml`, `llms.txt`, `llms-full.txt`, and `ai.txt`.
-- Multilingual Pages surfaces for Chinese and English showcase, docs, and HTML PPT.
+- Multilingual Pages surfaces for Chinese and English overview, usage, API, palettes, demos, skill, theme builder, about, docs, and HTML PPT.
 - Local docs site at `docs/site/`.
 - HTML PPT deck at `docs/deck/exoframe-html-ppt.html`.
 - Independent palette system with 10 palettes.
@@ -60,3 +60,4 @@ Default local URL: `http://127.0.0.1:5173/`
 - `Docs And Skill Polish`: Added README screenshot, full usage notes, PPT workflow, ASCII alignment check, and stronger validation.
 - `v0.2`: Adds installable skill metadata, HTML PPT workflow, docs/deck/library surfaces, and font-size controls.
 - `GitHub Pages And GEO`: Adds Pages deployment, sitemap/robots/llms/ai files, and zh/en HTML entry points.
+- `Multi-page Showcase`: Splits the front-end site into multilingual overview, usage, API, palettes, component demos, skill, theme builder, and about pages with persistent palette/theme controls.

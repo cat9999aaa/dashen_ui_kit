@@ -19,6 +19,41 @@ export const localeGroups = {
     en: "en.html",
     "x-default": ""
   },
+  usage: {
+    "zh-CN": "usage.html",
+    en: "usage.en.html",
+    "x-default": "usage.html"
+  },
+  api: {
+    "zh-CN": "api.html",
+    en: "api.en.html",
+    "x-default": "api.html"
+  },
+  palettes: {
+    "zh-CN": "palettes.html",
+    en: "palettes.en.html",
+    "x-default": "palettes.html"
+  },
+  components: {
+    "zh-CN": "components.html",
+    en: "components.en.html",
+    "x-default": "components.html"
+  },
+  skill: {
+    "zh-CN": "skill.html",
+    en: "skill.en.html",
+    "x-default": "skill.html"
+  },
+  theme: {
+    "zh-CN": "theme-builder.html",
+    en: "theme-builder.en.html",
+    "x-default": "theme-builder.html"
+  },
+  about: {
+    "zh-CN": "about.html",
+    en: "about.en.html",
+    "x-default": "about.html"
+  },
   docs: {
     "zh-CN": "docs/site/",
     en: "docs/site/en.html",
@@ -47,6 +82,118 @@ export const pages = [
     title: site.enTitle,
     description: site.enDescription,
     kind: "showcase"
+  },
+  {
+    path: "usage.html",
+    file: "usage.html",
+    lang: "zh-CN",
+    title: "用法 // dashen_ui_kit",
+    description: "dashen_ui_kit 用法页，覆盖本地安装、运行、检查、包 API 和组件库接入方式。",
+    kind: "usage"
+  },
+  {
+    path: "usage.en.html",
+    file: "usage.en.html",
+    lang: "en",
+    title: "Usage // dashen_ui_kit",
+    description: "Usage page for dashen_ui_kit, covering local install, run commands, checks, package API, and UI kit adoption.",
+    kind: "usage"
+  },
+  {
+    path: "api.html",
+    file: "api.html",
+    lang: "zh-CN",
+    title: "API // dashen_ui_kit",
+    description: "dashen_ui_kit API 页，列出包导出、初始化函数、palette 数据和组件交互入口。",
+    kind: "api"
+  },
+  {
+    path: "api.en.html",
+    file: "api.en.html",
+    lang: "en",
+    title: "API // dashen_ui_kit",
+    description: "API page for dashen_ui_kit, listing package exports, initialization functions, palette data, and component runtime entry points.",
+    kind: "api"
+  },
+  {
+    path: "palettes.html",
+    file: "palettes.html",
+    lang: "zh-CN",
+    title: "配色系统 // dashen_ui_kit",
+    description: "dashen_ui_kit 配色系统页，展示十套本地 palette 模块和跨页面持久化换肤能力。",
+    kind: "palettes"
+  },
+  {
+    path: "palettes.en.html",
+    file: "palettes.en.html",
+    lang: "en",
+    title: "Palette System // dashen_ui_kit",
+    description: "Palette system page for dashen_ui_kit, showing ten local palette modules and persistent site-wide theme switching.",
+    kind: "palettes"
+  },
+  {
+    path: "components.html",
+    file: "components.html",
+    lang: "zh-CN",
+    title: "组件演示 // dashen_ui_kit",
+    description: "dashen_ui_kit 组件演示页，展示按钮、徽章、弹层、toast、终端和可复用界面控件。",
+    kind: "components"
+  },
+  {
+    path: "components.en.html",
+    file: "components.en.html",
+    lang: "en",
+    title: "Component Demos // dashen_ui_kit",
+    description: "Component demo page for dashen_ui_kit, showing buttons, badges, modal, toast, terminal, and reusable UI controls.",
+    kind: "components"
+  },
+  {
+    path: "skill.html",
+    file: "skill.html",
+    lang: "zh-CN",
+    title: "Codex Skill // dashen_ui_kit",
+    description: "dashen_ui_kit Skill 页，说明如何把这套 UI 规则、模块和 HTML PPT 工作流安装给 Codex 使用。",
+    kind: "skill"
+  },
+  {
+    path: "skill.en.html",
+    file: "skill.en.html",
+    lang: "en",
+    title: "Codex Skill // dashen_ui_kit",
+    description: "Codex skill page for dashen_ui_kit, explaining how to install the UI rules, modules, and HTML deck workflow for Codex.",
+    kind: "skill"
+  },
+  {
+    path: "theme-builder.html",
+    file: "theme-builder.html",
+    lang: "zh-CN",
+    title: "主题构建器 // dashen_ui_kit",
+    description: "dashen_ui_kit 主题构建器页，说明如何新增独立 palette 文件并保持组件只消费语义变量。",
+    kind: "theme"
+  },
+  {
+    path: "theme-builder.en.html",
+    file: "theme-builder.en.html",
+    lang: "en",
+    title: "Theme Builder // dashen_ui_kit",
+    description: "Theme builder page for dashen_ui_kit, explaining how to add independent palette files while components consume semantic tokens only.",
+    kind: "theme"
+  },
+  {
+    path: "about.html",
+    file: "about.html",
+    lang: "zh-CN",
+    title: "王大神 // dashen_ui_kit",
+    description: "王大神 dashen 的项目背书页，介绍 dashen_ui_kit 背后的规则、关系、外壳和可复用 UI 思路。",
+    kind: "about"
+  },
+  {
+    path: "about.en.html",
+    file: "about.en.html",
+    lang: "en",
+    title: "Wang Dashen // dashen_ui_kit",
+    description: "Authority page for Wang Dashen, introducing the rules, relationships, shells, and reusable UI thinking behind dashen_ui_kit.",
+    kind: "about"
   },
   {
     path: "docs/site/",

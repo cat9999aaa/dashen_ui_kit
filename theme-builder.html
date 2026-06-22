@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="zh" data-theme="void" data-palette="amethyst">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="dashen_ui_kit 主题构建器页，说明如何新增独立 palette 文件并保持组件只消费语义变量。" />
+    <meta name="keywords" content="dashen_ui_kit, EXOFRAME, UI kit, frontend components, HTML PPT, Codex skill, local-only UI, palette system" />
+    <meta name="author" content="cat9999aaa" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://uiskill.dashen.wang/theme-builder.html" />
+    <link rel="alternate" hreflang="zh-CN" href="https://uiskill.dashen.wang/theme-builder.html" />
+    <link rel="alternate" hreflang="en" href="https://uiskill.dashen.wang/theme-builder.en.html" />
+    <link rel="alternate" hreflang="x-default" href="https://uiskill.dashen.wang/theme-builder.html" />
+    <link rel="icon" href="/src/assets/favicon.svg" type="image/svg+xml" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="dashen_ui_kit" />
+    <meta property="og:title" content="主题构建器 // dashen_ui_kit" />
+    <meta property="og:description" content="dashen_ui_kit 主题构建器页，说明如何新增独立 palette 文件并保持组件只消费语义变量。" />
+    <meta property="og:url" content="https://uiskill.dashen.wang/theme-builder.html" />
+    <meta property="og:image" content="https://uiskill.dashen.wang/og-showcase.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="主题构建器 // dashen_ui_kit" />
+    <meta name="twitter:description" content="dashen_ui_kit 主题构建器页，说明如何新增独立 palette 文件并保持组件只消费语义变量。" />
+    <meta name="twitter:image" content="https://uiskill.dashen.wang/og-showcase.png" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "SoftwareSourceCode",
+        "name": "主题构建器 // dashen_ui_kit",
+        "url": "https://uiskill.dashen.wang/theme-builder.html",
+        "inLanguage": [
+                "zh-CN",
+                "en"
+        ],
+        "description": "dashen_ui_kit 主题构建器页，说明如何新增独立 palette 文件并保持组件只消费语义变量。",
+        "codeRepository": "https://github.com/cat9999aaa/dashen_ui_kit"
+}
+    </script>
+    <title>主题构建器 // dashen_ui_kit</title>
+  </head>
+  <body>
+    <div class="crt-scan"></div>
+    <div class="crt-vignette"></div>
+    <div class="crt-roll"></div>
+    <header class="status-bar app-chrome site-nav">
+      <span class="status-dot"></span>
+      <a class="status-brand" href="/">dashen_ui_kit</a>
+      <span class="status-separator">::</span>
+      <span>UI SKILL SITE</span>
+      <nav class="status-nav" aria-label="Site navigation">
+        <a href="/">总览</a>
+        <a href="/usage.html">用法</a>
+        <a href="/api.html">API</a>
+        <a href="/palettes.html">配色</a>
+        <a href="/components.html">演示</a>
+        <a href="/skill.html">Skill</a>
+        <a href="/theme-builder.html" aria-current="page">主题</a>
+        <a href="/about.html">王大神</a>
+      </nav>
+      <a class="chrome-link" href="/theme-builder.en.html" data-locale-link="en">EN</a>
+      <button class="theme-toggle" id="theme-toggle" type="button">PAPER</button>
+    </header>
+    <main class="page-shell">
+      <aside class="side-rail" aria-label="Palette and page tools">
+        <div class="rail-card" data-label="ACTIVE PALETTE"><span data-active-palette-label>01 AMETHYST / 01-amethyst.css</span></div>
+        <div class="rail-card rail-pulse" data-label="ROUTE"><strong>主题构建器 // dashen_ui_kit</strong><span>dashen_ui_kit 主题构建器页，说明如何新增独立 palette 文件并保持组件只消费语义变量。</span></div>
+        <div class="rail-card" data-label="SHORTCUTS"><a href="https://github.com/cat9999aaa/dashen_ui_kit">GitHub 仓库</a><a href="/docs/site/">组件文档</a><a href="/docs/deck/exoframe-html-ppt.html">HTML PPT</a></div>
+      </aside>
+      <div class="page-content">
+        <section class="page-hero compact"><div class="eyebrow">// THEME BUILDER</div><h1 class="section-title">构建自己的主题</h1><p class="subtle">只新增 palette 文件和 manifest 条目，不改组件。</p></section><div class="code-shell"><div class="codebar"><span class="filename">11-your-theme.css</span><button class="code-copy" data-copy-code type="button">COPY</button><span class="language">CSS</span></div><pre><code class="language-css">[data-palette=&quot;your-theme&quot;] {
+  --palette-bg: #07090f;
+  --palette-surface: #101522;
+  --palette-primary: #7cf7ff;
+  --palette-success: #8cff5a;
+  --palette-signal: #ffd166;
+  --palette-danger: #ff4f6d;
+}</code></pre></div>
+      </div>
+    </main>
+    <nav class="mobile-page-nav" aria-label="Mobile site navigation">
+      <a href="/">总览</a>
+      <a href="/usage.html">用法</a>
+      <a href="/palettes.html">配色</a>
+      <a href="/components.html">演示</a>
+      <a href="/skill.html">Skill</a>
+    </nav>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

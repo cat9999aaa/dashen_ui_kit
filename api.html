@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="zh" data-theme="void" data-palette="amethyst">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="dashen_ui_kit API 页，列出包导出、初始化函数、palette 数据和组件交互入口。" />
+    <meta name="keywords" content="dashen_ui_kit, EXOFRAME, UI kit, frontend components, HTML PPT, Codex skill, local-only UI, palette system" />
+    <meta name="author" content="cat9999aaa" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://uiskill.dashen.wang/api.html" />
+    <link rel="alternate" hreflang="zh-CN" href="https://uiskill.dashen.wang/api.html" />
+    <link rel="alternate" hreflang="en" href="https://uiskill.dashen.wang/api.en.html" />
+    <link rel="alternate" hreflang="x-default" href="https://uiskill.dashen.wang/api.html" />
+    <link rel="icon" href="/src/assets/favicon.svg" type="image/svg+xml" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="dashen_ui_kit" />
+    <meta property="og:title" content="API // dashen_ui_kit" />
+    <meta property="og:description" content="dashen_ui_kit API 页，列出包导出、初始化函数、palette 数据和组件交互入口。" />
+    <meta property="og:url" content="https://uiskill.dashen.wang/api.html" />
+    <meta property="og:image" content="https://uiskill.dashen.wang/og-showcase.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="API // dashen_ui_kit" />
+    <meta name="twitter:description" content="dashen_ui_kit API 页，列出包导出、初始化函数、palette 数据和组件交互入口。" />
+    <meta name="twitter:image" content="https://uiskill.dashen.wang/og-showcase.png" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "SoftwareSourceCode",
+        "name": "API // dashen_ui_kit",
+        "url": "https://uiskill.dashen.wang/api.html",
+        "inLanguage": [
+                "zh-CN",
+                "en"
+        ],
+        "description": "dashen_ui_kit API 页，列出包导出、初始化函数、palette 数据和组件交互入口。",
+        "codeRepository": "https://github.com/cat9999aaa/dashen_ui_kit"
+}
+    </script>
+    <title>API // dashen_ui_kit</title>
+  </head>
+  <body>
+    <div class="crt-scan"></div>
+    <div class="crt-vignette"></div>
+    <div class="crt-roll"></div>
+    <header class="status-bar app-chrome site-nav">
+      <span class="status-dot"></span>
+      <a class="status-brand" href="/">dashen_ui_kit</a>
+      <span class="status-separator">::</span>
+      <span>UI SKILL SITE</span>
+      <nav class="status-nav" aria-label="Site navigation">
+        <a href="/">总览</a>
+        <a href="/usage.html">用法</a>
+        <a href="/api.html" aria-current="page">API</a>
+        <a href="/palettes.html">配色</a>
+        <a href="/components.html">演示</a>
+        <a href="/skill.html">Skill</a>
+        <a href="/theme-builder.html">主题</a>
+        <a href="/about.html">王大神</a>
+      </nav>
+      <a class="chrome-link" href="/api.en.html" data-locale-link="en">EN</a>
+      <button class="theme-toggle" id="theme-toggle" type="button">PAPER</button>
+    </header>
+    <main class="page-shell">
+      <aside class="side-rail" aria-label="Palette and page tools">
+        <div class="rail-card" data-label="ACTIVE PALETTE"><span data-active-palette-label>01 AMETHYST / 01-amethyst.css</span></div>
+        <div class="rail-card rail-pulse" data-label="ROUTE"><strong>API // dashen_ui_kit</strong><span>dashen_ui_kit API 页，列出包导出、初始化函数、palette 数据和组件交互入口。</span></div>
+        <div class="rail-card" data-label="SHORTCUTS"><a href="https://github.com/cat9999aaa/dashen_ui_kit">GitHub 仓库</a><a href="/docs/site/">组件文档</a><a href="/docs/deck/exoframe-html-ppt.html">HTML PPT</a></div>
+      </aside>
+      <div class="page-content">
+        <section class="page-hero compact"><div class="eyebrow">// API SURFACE</div><h1 class="section-title">包导出和运行入口</h1><p class="subtle">这里单独列出组件库能被其他项目调用的 API。完整参考见 docs/reference/api.md。</p></section><div class="showcase-grid"><div class="code-shell"><div class="codebar"><span class="filename">src/index.ts</span><button class="code-copy" data-copy-code type="button">COPY</button><span class="language">TYPESCRIPT</span></div><pre><code class="language-typescript">export { palettes, getPalette };
+export type { Palette, PaletteSwatch };
+export { initCodeCopy, initComponentDemos, initThemeToggle };
+export { renderPaletteGallery, syncActivePaletteLabels };
+export function initExoframeUI(): void;</code></pre></div><div class="panel" data-label="CONTRACT"><ul class="compact-list"><li>CSS 从 dashen-ui-kit/styles.css 进入。</li><li>initExoframeUI 初始化高亮、复制、组件、终端、主题和动效。</li><li>palette 数据从 src/data/palettes.ts 暴露。</li><li>组件文件不依赖具体 palette 名称。</li></ul></div></div>
+      </div>
+    </main>
+    <nav class="mobile-page-nav" aria-label="Mobile site navigation">
+      <a href="/">总览</a>
+      <a href="/usage.html">用法</a>
+      <a href="/palettes.html">配色</a>
+      <a href="/components.html">演示</a>
+      <a href="/skill.html">Skill</a>
+    </nav>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

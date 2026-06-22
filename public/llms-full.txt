@@ -6,6 +6,20 @@ A local-only EXOFRAME UI kit for terminal, CRT, ASCII, palette modules, componen
 
 - Showcase: https://uiskill.dashen.wang/
 - English showcase: https://uiskill.dashen.wang/en.html
+- Usage: https://uiskill.dashen.wang/usage.html
+- English usage: https://uiskill.dashen.wang/usage.en.html
+- API: https://uiskill.dashen.wang/api.html
+- English API: https://uiskill.dashen.wang/api.en.html
+- Palettes: https://uiskill.dashen.wang/palettes.html
+- English palettes: https://uiskill.dashen.wang/palettes.en.html
+- Component demos: https://uiskill.dashen.wang/components.html
+- English component demos: https://uiskill.dashen.wang/components.en.html
+- Codex skill: https://uiskill.dashen.wang/skill.html
+- English Codex skill: https://uiskill.dashen.wang/skill.en.html
+- Theme builder: https://uiskill.dashen.wang/theme-builder.html
+- English theme builder: https://uiskill.dashen.wang/theme-builder.en.html
+- About Dashen: https://uiskill.dashen.wang/about.html
+- English about Dashen: https://uiskill.dashen.wang/about.en.html
 - Component docs: https://uiskill.dashen.wang/docs/site/
 - English component docs: https://uiskill.dashen.wang/docs/site/en.html
 - HTML PPT example: https://uiskill.dashen.wang/docs/deck/exoframe-html-ppt.html
@@ -38,6 +52,13 @@ A local-only EXOFRAME UI kit for terminal, CRT, ASCII, palette modules, componen
 - README.zh-CN.md: Chinese guide.
 - README.en.md: English guide.
 - en.html: English showcase page.
+- usage.html / usage.en.html: install and validation pages.
+- api.html / api.en.html: package API overview pages.
+- palettes.html / palettes.en.html: site-wide palette switching pages.
+- components.html / components.en.html: component demo lab.
+- skill.html / skill.en.html: Codex skill installation and workflow pages.
+- theme-builder.html / theme-builder.en.html: custom palette builder pages.
+- about.html / about.en.html: Dashen authority page.
 - docs/site/en.html: English component docs page.
 - docs/deck/exoframe-html-ppt.en.html: English HTML PPT page.
 - docs/reference/api.md: package API.

@@ -156,3 +156,33 @@
   - `docs/site/en.html`;
   - `docs/deck/exoframe-html-ppt.en.html`.
 - Added `check:geo` to validate generated GEO files and page metadata.
+
+## Multi-Page Skill Site
+
+- Reworked the showcase direction from a single explanatory page into a generated multilingual page matrix.
+- Added `scripts/generate-pages.mjs` so overview, usage, API, palettes, demos, skill, theme builder, and about pages share one navigation and metadata source.
+- Expanded `scripts/seo-data.mjs` with zh/en locale groups for:
+  - overview;
+  - usage;
+  - API;
+  - palettes;
+  - component demos;
+  - Codex skill;
+  - theme builder;
+  - Wang Dashen authority;
+  - existing docs and HTML PPT pages.
+- Added Vite multi-entry inputs for every new page so GitHub Pages builds the full site instead of only the previous showcase entries.
+- Added `pages:generate` and made `bun run check` regenerate pages before GEO, validation, and production build.
+- Added a stronger navigation shell:
+  - sticky top menu with active page state;
+  - left status rail on desktop;
+  - fixed bottom quick rail on mobile;
+  - multilingual nav labels and language alternate links.
+- Added persistent palette switching with `localStorage` key `dashen-ui-palette`.
+- Added persistent paper/void theme switching with `localStorage` key `dashen-ui-theme`.
+- Scoped the old mobile tab behavior so it only runs when single-page mobile screen markers exist.
+- Updated README files with the new site map and command flow.
+- Regenerated GEO files so sitemap and llms/ai files include the expanded page set.
+- Verification:
+  - `bun run check` passed after generating the new pages;
+  - TypeScript, ASCII alignment, local asset, skill, font import, palette, GEO, and production build checks passed.

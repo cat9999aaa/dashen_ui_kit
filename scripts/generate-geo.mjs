@@ -37,6 +37,20 @@ ${site.description}
 
 - Showcase: ${absoluteUrl("")}
 - English showcase: ${absoluteUrl("en.html")}
+- Usage: ${absoluteUrl("usage.html")}
+- English usage: ${absoluteUrl("usage.en.html")}
+- API: ${absoluteUrl("api.html")}
+- English API: ${absoluteUrl("api.en.html")}
+- Palettes: ${absoluteUrl("palettes.html")}
+- English palettes: ${absoluteUrl("palettes.en.html")}
+- Component demos: ${absoluteUrl("components.html")}
+- English component demos: ${absoluteUrl("components.en.html")}
+- Codex skill: ${absoluteUrl("skill.html")}
+- English Codex skill: ${absoluteUrl("skill.en.html")}
+- Theme builder: ${absoluteUrl("theme-builder.html")}
+- English theme builder: ${absoluteUrl("theme-builder.en.html")}
+- About Dashen: ${absoluteUrl("about.html")}
+- English about Dashen: ${absoluteUrl("about.en.html")}
 - Component docs: ${absoluteUrl("docs/site/")}
 - English component docs: ${absoluteUrl("docs/site/en.html")}
 - HTML PPT example: ${absoluteUrl("docs/deck/exoframe-html-ppt.html")}
@@ -71,6 +85,13 @@ const full = `${llms}
 - README.zh-CN.md: Chinese guide.
 - README.en.md: English guide.
 - en.html: English showcase page.
+- usage.html / usage.en.html: install and validation pages.
+- api.html / api.en.html: package API overview pages.
+- palettes.html / palettes.en.html: site-wide palette switching pages.
+- components.html / components.en.html: component demo lab.
+- skill.html / skill.en.html: Codex skill installation and workflow pages.
+- theme-builder.html / theme-builder.en.html: custom palette builder pages.
+- about.html / about.en.html: Dashen authority page.
 - docs/site/en.html: English component docs page.
 - docs/deck/exoframe-html-ppt.en.html: English HTML PPT page.
 - docs/reference/api.md: package API.

@@ -1,4 +1,5 @@
 import { getPalette, palettes } from "../data/palettes";
+import { syncActivePaletteLabels } from "./palette-gallery";
 
 type CommandMap = Record<string, () => void>;
 
@@ -74,6 +75,8 @@ export function initTerminal(): void {
     theme: () => {
       const root = document.documentElement;
       root.dataset.theme = root.dataset.theme === "paper" ? "void" : "paper";
+      window.localStorage.setItem("dashen-ui-theme", root.dataset.theme);
+      syncActivePaletteLabels();
       writeLine(`theme switched to <span class=\"ok\">${root.dataset.theme}</span>`);
     },
     whoami: () => writeLine("operator: local developer · since-2010 class · no remote telemetry", "am"),

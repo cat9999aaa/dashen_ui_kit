@@ -1,7 +1,7 @@
 import { readFileSync } from "node:fs";
 import { globSync } from "node:fs";
 
-const files = globSync("{index.html,exoframe-concept.html,README*.md,docs/**/*.{md,html,css,js,ts},src/**/*.{ts,css,html},skill/**/*.{md,html,css,js},public/**/*.{html,css,js,svg}}", {
+const files = globSync("{*.html,README*.md,docs/**/*.{md,html,css,js,ts},src/**/*.{ts,css,html},skill/**/*.{md,html,css,js},public/**/*.{html,css,js,svg}}", {
   exclude: ["node_modules/**", "dist/**"]
 });
 

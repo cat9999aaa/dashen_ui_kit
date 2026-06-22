@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="dashen_ui_kit 是本地化 EXOFRAME 前端 UI 组件库，支持终端、CRT、ASCII、独立配色、组件文档、HTML PPT 和 Codex skill。" />
-    <meta name="keywords" content="dashen_ui_kit, EXOFRAME, UI kit, frontend components, HTML PPT, Codex skill, local-only UI, ASCII UI, CRT UI, palette system" />
+    <meta name="keywords" content="dashen_ui_kit, EXOFRAME, UI kit, frontend components, HTML PPT, Codex skill, local-only UI, palette system" />
     <meta name="author" content="cat9999aaa" />
     <meta name="robots" content="index, follow" />
     <link rel="canonical" href="https://uiskill.dashen.wang/" />
@@ -15,35 +15,26 @@
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="dashen_ui_kit" />
     <meta property="og:title" content="dashen_ui_kit // EXOFRAME 本地化前端 UI 组件库" />
-    <meta property="og:description" content="本地化 EXOFRAME 前端 UI 组件库，支持终端、CRT、ASCII、独立配色、组件文档、HTML PPT 和 Codex skill。" />
+    <meta property="og:description" content="dashen_ui_kit 是本地化 EXOFRAME 前端 UI 组件库，支持终端、CRT、ASCII、独立配色、组件文档、HTML PPT 和 Codex skill。" />
     <meta property="og:url" content="https://uiskill.dashen.wang/" />
     <meta property="og:image" content="https://uiskill.dashen.wang/og-showcase.png" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="dashen_ui_kit // EXOFRAME UI" />
-    <meta name="twitter:description" content="Local-only EXOFRAME UI kit for components, palettes, HTML PPT, and Codex skills." />
+    <meta name="twitter:title" content="dashen_ui_kit // EXOFRAME 本地化前端 UI 组件库" />
+    <meta name="twitter:description" content="dashen_ui_kit 是本地化 EXOFRAME 前端 UI 组件库，支持终端、CRT、ASCII、独立配色、组件文档、HTML PPT 和 Codex skill。" />
     <meta name="twitter:image" content="https://uiskill.dashen.wang/og-showcase.png" />
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@graph": [
-          {
-            "@type": "WebSite",
-            "name": "dashen_ui_kit",
-            "url": "https://uiskill.dashen.wang/",
-            "inLanguage": ["zh-CN", "en"],
-            "description": "A local-only EXOFRAME UI kit for terminal, CRT, ASCII, palette modules, component docs, HTML PPT decks, and Codex skills."
-          },
-          {
-            "@type": "SoftwareSourceCode",
-            "name": "dashen-ui-kit",
-            "codeRepository": "https://github.com/cat9999aaa/dashen_ui_kit",
-            "programmingLanguage": ["TypeScript", "CSS", "HTML"],
-            "runtimePlatform": "Web browser",
-            "applicationCategory": "DeveloperApplication",
-            "description": "Local-only EXOFRAME front-end UI kit with typed exports, independent palettes, HTML PPT output, and Codex skill resources."
-          }
-        ]
-      }
+        "@type": "SoftwareSourceCode",
+        "name": "dashen_ui_kit // EXOFRAME 本地化前端 UI 组件库",
+        "url": "https://uiskill.dashen.wang/",
+        "inLanguage": [
+                "zh-CN",
+                "en"
+        ],
+        "description": "dashen_ui_kit 是本地化 EXOFRAME 前端 UI 组件库，支持终端、CRT、ASCII、独立配色、组件文档、HTML PPT 和 Codex skill。",
+        "codeRepository": "https://github.com/cat9999aaa/dashen_ui_kit"
+}
     </script>
     <title>dashen_ui_kit // EXOFRAME 本地化前端 UI 组件库</title>
   </head>
@@ -51,184 +42,55 @@
     <div class="crt-scan"></div>
     <div class="crt-vignette"></div>
     <div class="crt-roll"></div>
-
-    <header class="status-bar app-chrome">
+    <header class="status-bar app-chrome site-nav">
       <span class="status-dot"></span>
-      <span class="status-brand">dashen_ui_kit</span>
+      <a class="status-brand" href="/">dashen_ui_kit</a>
       <span class="status-separator">::</span>
-      <span>GITHUB SHOWCASE</span>
-      <nav class="status-nav" aria-label="Section navigation">
-        <a href="#repo">repo</a>
-        <a href="#usage">usage</a>
-        <a href="#palettes">palettes</a>
-        <a href="#demos">demos</a>
-        <a href="#skill">skill</a>
-        <a href="#builder">builder</a>
+      <span>UI SKILL SITE</span>
+      <nav class="status-nav" aria-label="Site navigation">
+        <a href="/" aria-current="page">总览</a>
+        <a href="/usage.html">用法</a>
+        <a href="/api.html">API</a>
+        <a href="/palettes.html">配色</a>
+        <a href="/components.html">演示</a>
+        <a href="/skill.html">Skill</a>
+        <a href="/theme-builder.html">主题</a>
+        <a href="/about.html">王大神</a>
       </nav>
-      <a class="chrome-link" href="en.html" data-locale-link="en">EN</a>
+      <a class="chrome-link" href="/en.html" data-locale-link="en">EN</a>
       <button class="theme-toggle" id="theme-toggle" type="button">PAPER</button>
     </header>
-
-    <main class="showcase-app">
-      <section class="mobile-screen is-mobile-active" id="repo" data-mobile-screen="overview">
-        <div class="hero-grid wrap">
-          <div class="hero-copy">
-            <div class="eyebrow">// 王大神 · dashen presents</div>
-            <h1 class="product-title">dashen_ui_kit</h1>
-            <p class="product-lead">一个能被复制、安装、教学、改造成主题、再封装成 Codex skill 的 EXOFRAME 前端 UI 组件库。</p>
-            <div class="hero-actions">
-              <a class="exo-button" data-variant="primary" href="https://github.com/cat9999aaa/dashen_ui_kit">GitHub 仓库</a>
-              <a class="exo-button" href="docs/site/">组件文档</a>
-              <a class="exo-button" href="docs/deck/exoframe-html-ppt.html">HTML PPT</a>
-            </div>
-            <div class="metric-strip" aria-label="Project facts">
-              <span><b>10</b> palettes</span>
-              <span><b>0</b> CDN runtime</span>
-              <span><b>1</b> installable skill</span>
-              <span><b>zh/en</b> auto locale</span>
-            </div>
-          </div>
-          <aside class="phone-shell" aria-label="Mobile app shell">
-            <div class="phone-status"><span>EXOFRAME OS</span><span data-active-palette-label>01 AMETHYST / 01-amethyst.css</span></div>
-            <div class="phone-stage">
-              <div class="phone-title">UI SKILL CONSOLE</div>
-              <div class="phone-ring">API</div>
-              <div class="phone-grid">
-                <span>tokens</span><span>themes</span><span>docs</span><span>deck</span>
-              </div>
-              <div class="phone-command">bun run skill:install</div>
-            </div>
-            <div class="phone-nav"><span>repo</span><span>api</span><span>skill</span><span>theme</span></div>
-          </aside>
-        </div>
-      </section>
-
-      <section class="mobile-screen wrap" id="usage" data-mobile-screen="usage">
-        <div class="section-head">
-          <div><div class="eyebrow">// HOW TO USE</div><h2 class="section-title">安装、调用 API、接入项目</h2></div>
-          <p class="subtle">展示站必须把 GitHub 仓库讲清楚：怎么跑、怎么导入、怎么初始化、怎么拿 palette 数据。</p>
-        </div>
-        <div class="showcase-grid">
-          <div class="code-shell">
-            <div class="codebar"><span class="filename">terminal</span><button class="code-copy" data-copy-code type="button">COPY</button><span class="language">BASH</span></div>
-            <pre><code class="language-bash">git clone https://github.com/cat9999aaa/dashen_ui_kit.git
-cd dashen_ui_kit
-bun install
-bun run dev
-bun run check</code></pre>
-          </div>
-          <div class="code-shell">
-            <div class="codebar"><span class="filename">app.ts</span><button class="code-copy" data-copy-code type="button">COPY</button><span class="language">TYPESCRIPT</span></div>
-            <pre><code class="language-typescript">import "dashen-ui-kit/styles.css";
-import { initExoframeUI, palettes, getPalette } from "dashen-ui-kit";
-
-initExoframeUI();
-console.log(palettes.length, getPalette("amethyst"));</code></pre>
-          </div>
-        </div>
-      </section>
-
-      <section class="mobile-screen wrap" id="palettes" data-mobile-screen="palettes">
-        <div class="section-head">
-          <div><div class="eyebrow">// PALETTE SWITCHER</div><h2 class="section-title">十套配色现场切换</h2></div>
-          <p class="subtle">配色文件只暴露 <code>--palette-*</code>，组件只消费语义变量。你可以拿它做 SaaS、工具、文档、PPT 或个人品牌页面。</p>
-        </div>
-        <div data-palette-gallery></div>
-      </section>
-
-      <section class="mobile-screen wrap" id="demos" data-mobile-screen="demos">
-        <div class="section-head">
-          <div><div class="eyebrow">// COMPONENT LAB</div><h2 class="section-title">按钮、表单、弹层、文章、终端</h2></div>
-          <p class="subtle">不是静态截图，是可交互演示。点击按钮、切换 tab、打开弹层、复制代码、输入终端命令。</p>
-        </div>
-        <div class="demo-matrix">
-          <div class="panel" data-label="ACTIONS">
-            <div class="badge-row"><button class="exo-button" data-variant="primary">ENGAGE</button><button class="exo-button" data-variant="success">SYNC</button><button class="exo-button" data-variant="danger">ABORT</button></div>
-          </div>
-          <div class="panel" data-label="SIGNALS">
-            <div class="badge-row"><span class="exo-badge" data-tone="primary">PRIMARY</span><span class="exo-badge" data-tone="success">PASS</span><span class="exo-badge" data-tone="signal">WARN</span><span class="exo-badge" data-tone="danger">FAIL</span></div>
-          </div>
-          <div class="panel" data-label="RUNTIME">
-            <div class="badge-row"><button class="exo-button" data-variant="primary" data-open-modal type="button">OPEN MODAL</button><button class="exo-button" data-variant="success" data-show-toast type="button">SHOW TOAST</button></div>
-          </div>
-          <div class="terminal panel" data-label="TERMINAL">
-            <div class="terminal-head"><i class="terminal-light" style="background: var(--color-danger)"></i><i class="terminal-light" style="background: var(--color-signal)"></i><i class="terminal-light" style="background: var(--color-success)"></i><span>commands enabled</span></div>
-            <div class="terminal-log" id="terminal-log" aria-live="polite"></div>
-            <label class="command-line"><span class="prompt">local<span class="path">/exo</span>$</span><input id="command-input" autocomplete="off" spellcheck="false" aria-label="Terminal command" /></label>
-          </div>
-        </div>
-      </section>
-
-      <section class="mobile-screen wrap" id="skill" data-mobile-screen="skill">
-        <div class="section-head">
-          <div><div class="eyebrow">// CODEX SKILL</div><h2 class="section-title">把这套 UI 变成别人可调用的 skill</h2></div>
-          <p class="subtle">skill 已包含设计规则、模块地图、HTML PPT 工作流和模板。它可以教 Codex 用 EXOFRAME 构建界面、文档和演示稿。</p>
-        </div>
-        <div class="showcase-grid">
-          <div class="panel" data-label="INSTALL">
-            <div class="code-shell"><div class="codebar"><span class="filename">terminal</span><button class="code-copy" data-copy-code type="button">COPY</button><span class="language">BASH</span></div><pre><code class="language-bash">bun run skill:install
-# installs $exoframe-ui into local Codex skills</code></pre></div>
-          </div>
-          <div class="panel" data-label="WHAT IT KNOWS">
-            <ul class="compact-list"><li>本地资产与无 CDN 规则</li><li>palette 模块化迁移顺序</li><li>HTML PPT，而不是 .pptx</li><li>ASCII 对齐、打印和移动端检查</li></ul>
-          </div>
-        </div>
-      </section>
-
-      <section class="wrap" id="builder">
-        <div class="section-head">
-          <div><div class="eyebrow">// BUILD YOUR THEME</div><h2 class="section-title">构建自己的主题</h2></div>
-          <p class="subtle">新增主题只加 palette 文件和 manifest，不碰组件。这个约束让组件库未来能被别人安全复用。</p>
-        </div>
-        <div class="code-shell">
-          <div class="codebar"><span class="filename">src/styles/tokens/palettes/11-your-theme.css</span><button class="code-copy" data-copy-code type="button">COPY</button><span class="language">CSS</span></div>
-          <pre><code class="language-css">[data-palette="your-theme"] {
-  --palette-bg: #07090f;
-  --palette-surface: #101522;
-  --palette-primary: #7cf7ff;
-  --palette-success: #8cff5a;
-  --palette-signal: #ffd166;
-  --palette-danger: #ff4f6d;
-}</code></pre>
-        </div>
-      </section>
-
-      <section class="wrap authority" id="about">
-        <div class="section-head">
-          <div><div class="eyebrow">// BUILT BY 王大神 · DASHEN</div><h2 class="section-title">AI 最严厉的父亲</h2></div>
-          <p class="subtle">立法者 / 构架师 · Stanley Team 联合创始人兼技术负责人。二十年逆向、漏洞、站群、量化和 AI Agent 工程经验，把“公司”重新写成可运行的薄壳系统。</p>
-        </div>
-        <div class="authority-grid">
-          <div class="panel" data-label="PLAYER"><p>不接受默认规则，写规则。把自己运行成一家可拆装、可迁移、可持续演化的薄壳公司。</p></div>
-          <div class="panel" data-label="TRACK RECORD"><p>逆向与漏洞研究、2000+ PBN 节点、TradeV7 量化系统、Hermes Agent、OpenTSC、x-plan 内容工厂。</p></div>
-          <div class="panel" data-label="POSITION"><p>技术会被复制，关系不会。dashen_ui_kit 是这种立法者思维在 UI 与 skill 工程里的一个外壳。</p></div>
-        </div>
-      </section>
-    </main>
-
-    <nav class="mobile-tabbar" aria-label="Mobile sections">
-      <button type="button" data-mobile-target="overview" aria-selected="true">首页</button>
-      <button type="button" data-mobile-target="usage" aria-selected="false">用法</button>
-      <button type="button" data-mobile-target="palettes" aria-selected="false">配色</button>
-      <button type="button" data-mobile-target="demos" aria-selected="false">演示</button>
-      <button type="button" data-mobile-target="skill" aria-selected="false">Skill</button>
-    </nav>
-
-    <footer class="footer wrap">
-      <span><b>dashen_ui_kit</b> · GitHub showcase · API · skill · themes</span>
-      <span data-active-palette-label>01 AMETHYST / 01-amethyst.css</span>
-    </footer>
-
-    <div class="modal-backdrop" data-modal hidden>
-      <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
-        <div class="modal-header"><h2 class="modal-title" id="modal-title">LOCAL MODAL</h2><button class="exo-button" data-close-modal type="button">CLOSE</button></div>
-        <div class="modal-body">This overlay is part of the reusable component shell. It keeps behavior local and styling token-driven.</div>
-        <div class="modal-footer"><button class="exo-button" data-variant="primary" data-close-modal type="button">CONFIRM</button></div>
+    <main class="page-shell">
+      <aside class="side-rail" aria-label="Palette and page tools">
+        <div class="rail-card" data-label="ACTIVE PALETTE"><span data-active-palette-label>01 AMETHYST / 01-amethyst.css</span></div>
+        <div class="rail-card rail-pulse" data-label="ROUTE"><strong>dashen_ui_kit // EXOFRAME 本地化前端 UI 组件库</strong><span>dashen_ui_kit 是本地化 EXOFRAME 前端 UI 组件库，支持终端、CRT、ASCII、独立配色、组件文档、HTML PPT 和 Codex skill。</span></div>
+        <div class="rail-card" data-label="SHORTCUTS"><a href="https://github.com/cat9999aaa/dashen_ui_kit">GitHub 仓库</a><a href="/docs/site/">组件文档</a><a href="/docs/deck/exoframe-html-ppt.html">HTML PPT</a></div>
+      </aside>
+      <div class="page-content">
+        <section class="page-hero">
+          <div class="eyebrow">// 王大神 · dashen presents</div>
+          <h1 class="product-title">dashen_ui_kit</h1>
+          <p class="product-lead">一个多页面、多语言、可换肤、可安装 skill 的 EXOFRAME UI 组件库展示站。它讲清楚 GitHub 仓库怎么跑、API 怎么调、主题怎么做、Skill 怎么用。</p>
+          <div class="hero-actions"><a class="exo-button" data-variant="primary" href="/usage.html">开始使用</a><a class="exo-button" href="/palettes.html">切换配色</a><a class="exo-button" href="/skill.html">安装 Skill</a></div>
+        </section>
+        <section class="feature-map">
+          <a class="feature-tile" href="/usage.html"><b>Usage</b><span>安装、命令、API 调用</span></a>
+          <a class="feature-tile" href="/api.html"><b>API</b><span>包导出与初始化函数</span></a>
+          <a class="feature-tile" href="/palettes.html"><b>Palettes</b><span>十套配色，全站持久化</span></a>
+          <a class="feature-tile" href="/components.html"><b>Demos</b><span>按钮、弹层、终端、文档层</span></a>
+          <a class="feature-tile" href="/skill.html"><b>Skill</b><span>Codex 可安装工作流</span></a>
+          <a class="feature-tile" href="/theme-builder.html"><b>Theme</b><span>构建自己的视觉外壳</span></a>
+          <a class="feature-tile" href="/about.html"><b>Dashen</b><span>王大神个人背书</span></a>
+        </section>
       </div>
-    </div>
-    <div class="toast-stack" data-toast-stack aria-live="polite"></div>
-
+    </main>
+    <nav class="mobile-page-nav" aria-label="Mobile site navigation">
+      <a href="/" aria-current="page">总览</a>
+      <a href="/usage.html">用法</a>
+      <a href="/palettes.html">配色</a>
+      <a href="/components.html">演示</a>
+      <a href="/skill.html">Skill</a>
+    </nav>
     <script type="module" src="/src/main.ts"></script>
-
   </body>
 </html>

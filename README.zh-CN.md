@@ -2,7 +2,7 @@
 
 `dashen_ui_kit` 是一个本地化、可复用、炫酷优先的前端 UI 组件库草案。当前视觉方向叫 EXOFRAME：终端、CRT、ASCII、仪表面板、强配色、文章排版、代码高亮、动效、打印/PDF 和未来 Codex skill 都在同一个系统里。
 
-[在线展示](https://uiskill.dashen.wang/) · [英文展示](https://uiskill.dashen.wang/en.html) · [组件文档](https://uiskill.dashen.wang/docs/site/) · [英文文档](https://uiskill.dashen.wang/docs/site/en.html) · [HTML PPT](https://uiskill.dashen.wang/docs/deck/exoframe-html-ppt.html)
+[在线展示](https://uiskill.dashen.wang/) · [用法](https://uiskill.dashen.wang/usage.html) · [API](https://uiskill.dashen.wang/api.html) · [配色](https://uiskill.dashen.wang/palettes.html) · [演示](https://uiskill.dashen.wang/components.html) · [Skill](https://uiskill.dashen.wang/skill.html) · [主题](https://uiskill.dashen.wang/theme-builder.html) · [王大神](https://uiskill.dashen.wang/about.html) · [英文](https://uiskill.dashen.wang/en.html) · [HTML PPT](https://uiskill.dashen.wang/docs/deck/exoframe-html-ppt.html)
 
 ![EXOFRAME showcase](docs/assets/showcase-amethyst.png)
 
@@ -54,8 +54,9 @@ bun run check
 - `check:skill`：校验 `skill/SKILL.md` frontmatter。
 - `check:palettes`：校验 10 套 palette 的变量契约和数据清单。
 - `check:geo`：校验 sitemap、robots、llms 和页面多语言元数据。
+- `pages:generate`：根据 `scripts/seo-data.mjs` 生成多语言页面壳。
 - `build`：生成 Vite 生产构建。
-- `check`：按顺序执行类型、ASCII、本地资产、skill 和构建检查。
+- `check`：按顺序生成页面/GEO，并执行类型、ASCII、本地资产、skill、palette、GEO 和构建检查。
 
 ## 目录
 
@@ -70,6 +71,13 @@ bun run check
 - `src/data/palettes.ts`：配色清单和展示数据。
 - `src/lib/`：本地交互逻辑。
 - `src/index.ts`：组件库 typed export 入口。
+- `usage.html` / `usage.en.html`：用法页。
+- `api.html` / `api.en.html`：API 页。
+- `palettes.html` / `palettes.en.html`：配色页。
+- `components.html` / `components.en.html`：组件演示页。
+- `skill.html` / `skill.en.html`：Skill 页。
+- `theme-builder.html` / `theme-builder.en.html`：主题构建页。
+- `about.html` / `about.en.html`：王大神背书页。
 - `docs/site/`：本地组件文档站。
 - `docs/site/en.html`：英文组件文档入口。
 - `docs/deck/`：HTML PPT 示例。
@@ -200,7 +208,7 @@ ASCII 相关内容使用 `bun run check:ascii` 验证。规则：
 - GitHub Pages 地址：`https://uiskill.dashen.wang/`。
 - `public/sitemap.xml`、`public/robots.txt`、`public/llms.txt`、`public/llms-full.txt` 和 `public/ai.txt` 由 `bun run geo:generate` 生成。
 - 页面包含 canonical、Open Graph、Twitter card、JSON-LD 和 `hreflang`。
-- 中文页面是主入口，`en.html`、`docs/site/en.html` 和 `docs/deck/exoframe-html-ppt.en.html` 是可直接访问的英文页面。
+- 中文页面是主入口，`*.en.html`、`docs/site/en.html` 和 `docs/deck/exoframe-html-ppt.en.html` 是可直接访问的英文页面。
 
 ## 更新记录
 
@@ -210,3 +218,4 @@ ASCII 相关内容使用 `bun run check:ascii` 验证。规则：
 - `Docs And Skill Polish`：补充 README 截图、完整使用说明、PPT 工作流、ASCII 自动检查、本地资产扫描范围和验证命令。
 - `v0.2 Full-Form Push`：加入可安装 skill、HTML PPT、文档站、组件库导出、API 文档和字体子集化检查。
 - `GitHub Pages And GEO`：加入 Pages 部署、sitemap/robots/llms/ai 文件，以及中英文展示、文档和 HTML PPT 入口。
+- `Multi-page Skill Site`：把单页展示拆成总览、用法、API、配色、组件演示、Skill、主题构建、王大神背书等中英文页面，并加入全站导航和配色/主题持久化。

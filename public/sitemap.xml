@@ -19,6 +19,132 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://uiskill.dashen.wang/" />
   </url>
   <url>
+    <loc>https://uiskill.dashen.wang/usage.html</loc>
+    <lastmod>2026-06-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://uiskill.dashen.wang/usage.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://uiskill.dashen.wang/usage.en.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://uiskill.dashen.wang/usage.html" />
+  </url>
+  <url>
+    <loc>https://uiskill.dashen.wang/usage.en.html</loc>
+    <lastmod>2026-06-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://uiskill.dashen.wang/usage.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://uiskill.dashen.wang/usage.en.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://uiskill.dashen.wang/usage.html" />
+  </url>
+  <url>
+    <loc>https://uiskill.dashen.wang/api.html</loc>
+    <lastmod>2026-06-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://uiskill.dashen.wang/api.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://uiskill.dashen.wang/api.en.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://uiskill.dashen.wang/api.html" />
+  </url>
+  <url>
+    <loc>https://uiskill.dashen.wang/api.en.html</loc>
+    <lastmod>2026-06-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://uiskill.dashen.wang/api.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://uiskill.dashen.wang/api.en.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://uiskill.dashen.wang/api.html" />
+  </url>
+  <url>
+    <loc>https://uiskill.dashen.wang/palettes.html</loc>
+    <lastmod>2026-06-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://uiskill.dashen.wang/palettes.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://uiskill.dashen.wang/palettes.en.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://uiskill.dashen.wang/palettes.html" />
+  </url>
+  <url>
+    <loc>https://uiskill.dashen.wang/palettes.en.html</loc>
+    <lastmod>2026-06-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://uiskill.dashen.wang/palettes.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://uiskill.dashen.wang/palettes.en.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://uiskill.dashen.wang/palettes.html" />
+  </url>
+  <url>
+    <loc>https://uiskill.dashen.wang/components.html</loc>
+    <lastmod>2026-06-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://uiskill.dashen.wang/components.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://uiskill.dashen.wang/components.en.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://uiskill.dashen.wang/components.html" />
+  </url>
+  <url>
+    <loc>https://uiskill.dashen.wang/components.en.html</loc>
+    <lastmod>2026-06-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://uiskill.dashen.wang/components.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://uiskill.dashen.wang/components.en.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://uiskill.dashen.wang/components.html" />
+  </url>
+  <url>
+    <loc>https://uiskill.dashen.wang/skill.html</loc>
+    <lastmod>2026-06-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://uiskill.dashen.wang/skill.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://uiskill.dashen.wang/skill.en.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://uiskill.dashen.wang/skill.html" />
+  </url>
+  <url>
+    <loc>https://uiskill.dashen.wang/skill.en.html</loc>
+    <lastmod>2026-06-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://uiskill.dashen.wang/skill.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://uiskill.dashen.wang/skill.en.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://uiskill.dashen.wang/skill.html" />
+  </url>
+  <url>
+    <loc>https://uiskill.dashen.wang/theme-builder.html</loc>
+    <lastmod>2026-06-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://uiskill.dashen.wang/theme-builder.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://uiskill.dashen.wang/theme-builder.en.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://uiskill.dashen.wang/theme-builder.html" />
+  </url>
+  <url>
+    <loc>https://uiskill.dashen.wang/theme-builder.en.html</loc>
+    <lastmod>2026-06-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://uiskill.dashen.wang/theme-builder.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://uiskill.dashen.wang/theme-builder.en.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://uiskill.dashen.wang/theme-builder.html" />
+  </url>
+  <url>
+    <loc>https://uiskill.dashen.wang/about.html</loc>
+    <lastmod>2026-06-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://uiskill.dashen.wang/about.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://uiskill.dashen.wang/about.en.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://uiskill.dashen.wang/about.html" />
+  </url>
+  <url>
+    <loc>https://uiskill.dashen.wang/about.en.html</loc>
+    <lastmod>2026-06-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://uiskill.dashen.wang/about.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://uiskill.dashen.wang/about.en.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://uiskill.dashen.wang/about.html" />
+  </url>
+  <url>
     <loc>https://uiskill.dashen.wang/docs/site/</loc>
     <lastmod>2026-06-22</lastmod>
     <changefreq>weekly</changefreq>
