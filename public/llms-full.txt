@@ -4,12 +4,12 @@ A local-only EXOFRAME UI kit for terminal, CRT, ASCII, palette modules, componen
 
 ## Primary URLs
 
-- Showcase: https://cat9999aaa.github.io/dashen_ui_kit/
-- English showcase: https://cat9999aaa.github.io/dashen_ui_kit/en.html
-- Component docs: https://cat9999aaa.github.io/dashen_ui_kit/docs/site/
-- English component docs: https://cat9999aaa.github.io/dashen_ui_kit/docs/site/en.html
-- HTML PPT example: https://cat9999aaa.github.io/dashen_ui_kit/docs/deck/exoframe-html-ppt.html
-- English HTML PPT example: https://cat9999aaa.github.io/dashen_ui_kit/docs/deck/exoframe-html-ppt.en.html
+- Showcase: https://uiskill.dashen.wang/
+- English showcase: https://uiskill.dashen.wang/en.html
+- Component docs: https://uiskill.dashen.wang/docs/site/
+- English component docs: https://uiskill.dashen.wang/docs/site/en.html
+- HTML PPT example: https://uiskill.dashen.wang/docs/deck/exoframe-html-ppt.html
+- English HTML PPT example: https://uiskill.dashen.wang/docs/deck/exoframe-html-ppt.en.html
 
 ## What This Project Is
 

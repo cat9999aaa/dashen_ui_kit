@@ -1,6 +1,6 @@
 export const site = {
-  origin: "https://cat9999aaa.github.io",
-  basePath: "/dashen_ui_kit/",
+  origin: "https://uiskill.dashen.wang",
+  basePath: "/",
   name: "dashen_ui_kit",
   title: "dashen_ui_kit // EXOFRAME UI",
   zhTitle: "dashen_ui_kit // EXOFRAME 本地化前端 UI 组件库",

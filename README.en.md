@@ -2,7 +2,7 @@
 
 `dashen_ui_kit` is a local-only, reusable, visually intense front-end UI kit draft. The current direction is EXOFRAME: terminal, CRT, ASCII, instrument panels, bold palettes, prose formatting, code highlighting, motion, print/PDF output, and future Codex skill reuse in one system.
 
-[Live Demo](https://cat9999aaa.github.io/dashen_ui_kit/) · [English Demo](https://cat9999aaa.github.io/dashen_ui_kit/en.html) · [Docs](https://cat9999aaa.github.io/dashen_ui_kit/docs/site/) · [English Docs](https://cat9999aaa.github.io/dashen_ui_kit/docs/site/en.html) · [HTML PPT](https://cat9999aaa.github.io/dashen_ui_kit/docs/deck/exoframe-html-ppt.html)
+[Live Demo](https://uiskill.dashen.wang/) · [English Demo](https://uiskill.dashen.wang/en.html) · [Docs](https://uiskill.dashen.wang/docs/site/) · [English Docs](https://uiskill.dashen.wang/docs/site/en.html) · [HTML PPT](https://uiskill.dashen.wang/docs/deck/exoframe-html-ppt.html)
 
 ![EXOFRAME showcase](docs/assets/showcase-amethyst.png)
 
@@ -191,7 +191,7 @@ Run `bun run check:ascii` after editing ASCII content. It validates:
 
 ## GEO / SEO
 
-- GitHub Pages URL: `https://cat9999aaa.github.io/dashen_ui_kit/`.
+- GitHub Pages URL: `https://uiskill.dashen.wang/`.
 - `public/sitemap.xml`, `public/robots.txt`, `public/llms.txt`, `public/llms-full.txt`, and `public/ai.txt` are generated with `bun run geo:generate`.
 - Pages include canonical links, Open Graph, Twitter cards, JSON-LD, and `hreflang`.
 - The Chinese page is the primary entry; `en.html`, `docs/site/en.html`, and `docs/deck/exoframe-html-ppt.en.html` are directly accessible English pages.

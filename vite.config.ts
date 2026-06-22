@@ -1,10 +1,8 @@
 import { resolve } from "node:path";
 import { defineConfig } from "vite";
 
-const base = process.env.GITHUB_PAGES === "true" ? "/dashen_ui_kit/" : "/";
-
 export default defineConfig({
-  base,
+  base: "/",
   build: {
     rollupOptions: {
       input: {

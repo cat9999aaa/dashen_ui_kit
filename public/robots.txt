@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://cat9999aaa.github.io/dashen_ui_kit/sitemap.xml
+Sitemap: https://uiskill.dashen.wang/sitemap.xml

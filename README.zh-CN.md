@@ -2,7 +2,7 @@
 
 `dashen_ui_kit` 是一个本地化、可复用、炫酷优先的前端 UI 组件库草案。当前视觉方向叫 EXOFRAME：终端、CRT、ASCII、仪表面板、强配色、文章排版、代码高亮、动效、打印/PDF 和未来 Codex skill 都在同一个系统里。
 
-[在线展示](https://cat9999aaa.github.io/dashen_ui_kit/) · [英文展示](https://cat9999aaa.github.io/dashen_ui_kit/en.html) · [组件文档](https://cat9999aaa.github.io/dashen_ui_kit/docs/site/) · [英文文档](https://cat9999aaa.github.io/dashen_ui_kit/docs/site/en.html) · [HTML PPT](https://cat9999aaa.github.io/dashen_ui_kit/docs/deck/exoframe-html-ppt.html)
+[在线展示](https://uiskill.dashen.wang/) · [英文展示](https://uiskill.dashen.wang/en.html) · [组件文档](https://uiskill.dashen.wang/docs/site/) · [英文文档](https://uiskill.dashen.wang/docs/site/en.html) · [HTML PPT](https://uiskill.dashen.wang/docs/deck/exoframe-html-ppt.html)
 
 ![EXOFRAME showcase](docs/assets/showcase-amethyst.png)
 
@@ -191,7 +191,7 @@ ASCII 相关内容使用 `bun run check:ascii` 验证。规则：
 
 ## GEO / SEO
 
-- GitHub Pages 地址：`https://cat9999aaa.github.io/dashen_ui_kit/`。
+- GitHub Pages 地址：`https://uiskill.dashen.wang/`。
 - `public/sitemap.xml`、`public/robots.txt`、`public/llms.txt`、`public/llms-full.txt` 和 `public/ai.txt` 由 `bun run geo:generate` 生成。
 - 页面包含 canonical、Open Graph、Twitter card、JSON-LD 和 `hreflang`。
 - 中文页面是主入口，`en.html`、`docs/site/en.html` 和 `docs/deck/exoframe-html-ppt.en.html` 是可直接访问的英文页面。

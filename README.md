@@ -2,7 +2,7 @@
 
 Reusable local-only EXOFRAME UI kit for cool terminal/CRT/ASCII screens, prose, motion, palette modules, print/PDF output, and future Codex skill reuse.
 
-[Live Demo](https://cat9999aaa.github.io/dashen_ui_kit/) · [English Demo](https://cat9999aaa.github.io/dashen_ui_kit/en.html) · [Docs](https://cat9999aaa.github.io/dashen_ui_kit/docs/site/) · [English Docs](https://cat9999aaa.github.io/dashen_ui_kit/docs/site/en.html) · [HTML PPT](https://cat9999aaa.github.io/dashen_ui_kit/docs/deck/exoframe-html-ppt.html)
+[Live Demo](https://uiskill.dashen.wang/) · [English Demo](https://uiskill.dashen.wang/en.html) · [Docs](https://uiskill.dashen.wang/docs/site/) · [English Docs](https://uiskill.dashen.wang/docs/site/en.html) · [HTML PPT](https://uiskill.dashen.wang/docs/deck/exoframe-html-ppt.html)
 
 ![EXOFRAME showcase](docs/assets/showcase-amethyst.png)
 
