@@ -36,7 +36,7 @@
     "check:types": "tsc --noEmit",
     "check:local-assets": "node scripts/check-local-assets.mjs",
     "check:ascii": "node scripts/check-ascii.mjs",
-    "check:skill": "python3 /home/cat9999sss/.codex/skills/.system/skill-creator/scripts/quick_validate.py skill",
+    "check:skill": "node scripts/check-skill.mjs",
     "skill:install": "node scripts/install-skill.mjs",
     "check:font-imports": "node scripts/check-font-imports.mjs",
     "check:palettes": "node scripts/check-palettes.mjs",
