@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="/src/assets/favicon.svg" type="image/svg+xml" />
-    <title>EXOFRAME // Local Amethyst</title>
+    <title>EXOFRAME // dashen_ui_kit</title>
   </head>
   <body>
     <div class="crt-scan"></div>
@@ -36,7 +36,7 @@
 ██╔══╝   ██╔██╗ ██║   ██║██╔══╝  ██╔══██╗██╔══██║██║╚██╔╝██║██╔══╝
 ███████╗██╔╝ ██╗╚██████╔╝██║     ██║  ██║██║  ██║██║ ╚═╝ ██║███████╗
 ╚══════╝╚═╝  ╚═╝ ╚═════╝ ╚═╝     ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝     ╚═╝╚══════╝</pre>
-        <p class="tagline">紫磷终端 · 本地资产 · 可打印内容层</p>
+        <p class="tagline">多配色终端 · 本地资产 · 可打印内容层</p>
 
         <div class="terminal" aria-label="Interactive terminal">
           <div class="terminal-head">
@@ -56,9 +56,9 @@
       <div class="divider"><b>════════</b> LOCAL MODULE TEST <b>════════</b></div>
 
       <section class="wrap" id="palette">
-        <div class="eyebrow">// PALETTE — 01 AMETHYST</div>
+        <div class="eyebrow">// PALETTE — <span data-active-palette-label>01 AMETHYST / 01-amethyst.css</span></div>
         <h2 class="section-title">PALETTE</h2>
-        <p class="subtle">紫磷为主，绿磷为激活，琥珀为信号。后续配色只替换独立 palette 文件。</p>
+        <p class="subtle">底层组件只消费语义变量；配色作为独立 palette 文件注入颜色、明暗 surface、代码高亮和状态色。以后改组件不需要逐套改配色。</p>
         <div data-palette-gallery></div>
       </section>
 
@@ -86,7 +86,7 @@
           <div class="panel" data-label="INPUT">
             <label>
               <span class="eyebrow">LOCAL PATH</span>
-              <input class="exo-field" value="tokens/palettes/01-amethyst.css" />
+              <input class="exo-field" value="tokens/palettes/*.css" />
             </label>
           </div>
           <div class="panel" data-label="FORM CONTROLS">
@@ -311,7 +311,7 @@ export function applyPalette(id: string, surface: Surface = "void") {
 
     <footer class="footer wrap">
       <span><b>EXOFRAME</b> · local build · no CDN · skill-ready draft</span>
-      <span>palette 01 / amethyst</span>
+      <span data-active-palette-label>01 AMETHYST / 01-amethyst.css</span>
     </footer>
 
     <div class="modal-backdrop" data-modal hidden>

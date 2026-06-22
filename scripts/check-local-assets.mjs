@@ -1,7 +1,7 @@
 import { readFileSync } from "node:fs";
 import { globSync } from "node:fs";
 
-const files = globSync("{index.html,exoframe-concept.html,src/**/*.{ts,css,html},skill/**/*.md}", {
+const files = globSync("{index.html,exoframe-concept.html,README*.md,src/**/*.{ts,css,html},skill/**/*.md,public/**/*.{html,css,js,svg}}", {
   exclude: ["node_modules/**", "dist/**"]
 });
 
@@ -11,7 +11,9 @@ const findings = [];
 for (const file of files) {
   const text = readFileSync(file, "utf8");
   text.split(/\r?\n/).forEach((line, index) => {
-    if (blocked.some((pattern) => pattern.test(line))) {
+    const isMarkdown = file.endsWith(".md");
+    const shouldScan = !isMarkdown || /]\(\s*https?:\/\//i.test(line) || /<(script|link|img|iframe|source)\b/i.test(line);
+    if (shouldScan && blocked.some((pattern) => pattern.test(line))) {
       findings.push(`${file}:${index + 1}: ${line.trim()}`);
     }
   });

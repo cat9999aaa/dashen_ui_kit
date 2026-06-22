@@ -1,3 +1,5 @@
+import { syncActivePaletteLabels } from "./palette-gallery";
+
 export function initThemeToggle(): void {
   const button = document.querySelector<HTMLButtonElement>("#theme-toggle");
   if (!button) return;
@@ -10,6 +12,7 @@ export function initThemeToggle(): void {
     const root = document.documentElement;
     root.dataset.theme = root.dataset.theme === "paper" ? "void" : "paper";
     syncLabel();
+    syncActivePaletteLabels();
   });
 
   syncLabel();

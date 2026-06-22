@@ -22,7 +22,7 @@
 .exo-button[data-variant="primary"] {
   border-color: var(--color-primary);
   background: var(--color-primary);
-  color: #fff;
+  color: var(--color-on-primary);
 }
 
 .exo-button[data-variant="primary"]:hover {

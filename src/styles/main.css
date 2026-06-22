@@ -14,6 +14,16 @@
 @import "./tokens/base/radius-border.css";
 @import "./tokens/base/motion.css";
 @import "./tokens/palettes/01-amethyst.css";
+@import "./tokens/palettes/02-azure.css";
+@import "./tokens/palettes/03-scarlet.css";
+@import "./tokens/palettes/04-obsidian.css";
+@import "./tokens/palettes/05-argent.css";
+@import "./tokens/palettes/06-osseous.css";
+@import "./tokens/palettes/07-amber.css";
+@import "./tokens/palettes/08-phosphor.css";
+@import "./tokens/palettes/09-hazard.css";
+@import "./tokens/palettes/10-monochrome.css";
+@import "./tokens/palette-system.css";
 @import "./tokens/semantic.css";
 
 @import "./motion/keyframes.css";
@@ -66,7 +76,7 @@
   line-height: 1;
   scrollbar-width: none;
   text-align: center;
-  text-shadow: -1px 0 rgba(0, 229, 255, 0.25), 1px 0 rgba(255, 0, 128, 0.22), 0 0 9px rgba(150, 90, 230, 0.5);
+  text-shadow: var(--text-glow);
   white-space: pre;
 }
 
@@ -86,7 +96,7 @@
 .terminal {
   margin-block-start: 30px;
   border: 1px solid var(--color-line);
-  background: rgba(8, 6, 14, 0.7);
+  background: color-mix(in srgb, var(--color-surface) 72%, transparent);
 }
 
 [data-theme="paper"] .terminal {
@@ -217,6 +227,37 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(118px, 1fr));
   gap: 6px;
+}
+
+.palette-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-block-end: 16px;
+}
+
+.palette-file {
+  color: var(--color-faint);
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+}
+
+.palette-activate {
+  cursor: pointer;
+  border: 1px solid var(--color-line);
+  background: var(--color-card);
+  color: var(--color-text);
+  padding: 7px 11px;
+  font-family: var(--font-mono);
+  font-size: 0.625rem;
+  letter-spacing: 0.08em;
+}
+
+.palette-activate[aria-pressed="true"] {
+  border-color: var(--color-success);
+  color: var(--color-success);
+  box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--color-success) 35%, transparent);
 }
 
 .chip {

@@ -116,7 +116,7 @@
 
 .article mark {
   background: var(--color-success);
-  color: #0a1500;
+  color: var(--color-on-success);
   padding-inline: 4px;
 }
 

@@ -81,3 +81,24 @@
   - design rules reference;
   - module map reference;
   - starter showcase template asset.
+
+## Independent Palette System
+
+- Reworked palette architecture so base/components consume semantic variables and palette files expose raw `--palette-*` values only.
+- Added `src/styles/tokens/palette-system.css` as the mapping layer between active palette and UI semantics.
+- Added ten independent palette modules:
+  - `01-amethyst`;
+  - `02-azure`;
+  - `03-scarlet`;
+  - `04-obsidian`;
+  - `05-argent`;
+  - `06-osseous`;
+  - `07-amber`;
+  - `08-phosphor`;
+  - `09-hazard`;
+  - `10-monochrome`.
+- Updated the showcase palette gallery to activate palettes from `src/data/palettes.ts`.
+- Updated terminal `palette` command to read the active palette instead of hard-coded colors.
+- Moved code block and syntax colors onto semantic variables.
+- Added multilingual README entry points: Chinese and English.
+- Updated architecture docs, module reference, and future skill references with palette independence rules.

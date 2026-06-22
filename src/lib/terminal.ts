@@ -1,3 +1,5 @@
+import { getPalette, palettes } from "../data/palettes";
+
 type CommandMap = Record<string, () => void>;
 
 const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
@@ -21,7 +23,7 @@ export function initTerminal(): void {
     ["> memory ............... <span class=\"ok\">OK</span>", ""],
     ["> local assets ......... <span class=\"ok\">MOUNTED</span>", ""],
     ["> external cdn ......... <span class=\"er\">BLOCKED</span>", ""],
-    ["> palette[01] AMETHYST . <span class=\"vi\">LOADED</span>", ""],
+    ["> palette system ...... <span class=\"vi\">10 MODULES</span>", ""],
     ["> article/print layer .. <span class=\"am\">READY</span>", ""],
     ["type <span class=\"ok\">help</span> and press enter", "mu"]
   ];
@@ -60,8 +62,14 @@ export function initTerminal(): void {
     help: () => writeLine("commands: <span class=\"ok\">help ls palette theme whoami boot clear</span>", "mu"),
     ls: () => writeLine("tokens/ palettes/ elements/ components/ motion/ print/ skill/", "vi"),
     palette: () => {
-      const colors = ["#160C27", "#391C62", "#4D2585", "#7741C1", "#9D6BE8", "#C9B2EC", "#9DF542", "#F0A030", "#FF4A52"];
-      writeLine(colors.map((color) => `<span style=\"background:${color};color:#000;padding:0 6px\">${color}</span>`).join(" "));
+      const palette = getPalette(document.documentElement.dataset.palette ?? palettes[0].id);
+      const colors = [...palette.ramp.slice(0, 6), ...palette.accents];
+      writeLine(`<span class=\"mu\">${palette.name} · ${palette.cssFile}</span>`);
+      writeLine(
+        colors
+          .map((color) => `<span style=\"background:${color.value};color:${color.foreground};padding:0 6px\">${color.value.toUpperCase()}</span>`)
+          .join(" ")
+      );
     },
     theme: () => {
       const root = document.documentElement;

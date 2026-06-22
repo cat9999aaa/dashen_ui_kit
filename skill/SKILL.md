@@ -12,13 +12,14 @@ Build with the EXOFRAME system when a project needs original terminal/CRT/ASCII-
 - Do not use franchise names, logos, copied interface graphics, character references, or third-party IP.
 - Do not use CDN assets. Use local packages or bundled assets.
 - Keep modules small: tokens, palettes, elements, components, motion, and print stay separate.
+- Keep palette files independent from components. Components consume semantic variables only.
 - Treat article typography and print output as first-class surfaces.
 - Respect `prefers-reduced-motion`.
 
 ## Workflow
 
 1. Choose one palette module.
-2. Load token, element, component, motion, and print layers separately.
+2. Load base tokens, the chosen palette, `palette-system.css`, semantic tokens, elements, components, motion, and print layers separately.
 3. Verify screen UI in a browser.
 4. Verify print/PDF output when prose or print styles change.
 
